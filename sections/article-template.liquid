@@ -93,6 +93,10 @@
       {{ article.content }}
     </div>
 
+    <div class="article-related-products">
+      {% include 'pro-blogger.snippet.related-products' %}
+    </div>
+
     {%- if section.settings.social_sharing_blog -%}
       {%- render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image -%}
     {%- endif -%}
@@ -192,6 +196,40 @@
   </div>
 </div>
 
+{%- if section.settings.blog_show_previous_and_next_buttons -%}
+  <div class="blog-next-previous">
+    <ul class="page-width">
+        <li class="article__grid-meta">
+          {%- if blog.next_article -%}
+            <a href="{{ blog.next_article }}">
+              <img src="{{ blog.next_article | img_url: '480x480' }}">
+              <p>{{ blog.next_article.title }}</p>
+            </a>
+          {%- else -%}
+            {% assign article = blog.articles | last %}
+            <a href="{{ article.url }}">
+              <img src="{{ article | img_url: '480x480' }}">
+              <p>{{ article.title }}</p>
+            </a>
+          {%- endif -%}
+        </li>
+        <li class="article__grid-meta">
+        {%- if blog.previous_article -%}
+          <a href="{{ blog.previous_article }}">
+            <img src="{{ blog.previous_article | img_url: '480x480' }}">
+            <p>{{ blog.previous_article.title }}</p>
+          </a>
+        {%- else -%}
+          {% assign article = blog.articles | first %}
+            <a href="{{ article.url }}">
+              <img src="{{ article | img_url: '480x480' }}">
+              <p>{{ article.title }}</p>
+            </a>
+          {%- endif -%}
+      </li>
+    </ul>
+  </div>
+{%- endif -%}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -272,6 +310,12 @@
         "type": "checkbox",
         "id": "social_sharing_blog",
         "label": "Show social sharing buttons",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_previous_and_next_buttons",
+        "label": "Show next/ previous buttons",
         "default": true
       }
     ]

@@ -1,0 +1,158 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+{%- capture image_layout -%}
+{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+  <div class="feature-row__item feature-row__image-container" style="background: url('{{ img_url }}');">
+    <div style="margin: 0 auto;">
+      {%- if section.settings.image != blank -%}
+        {%- if section.settings.button_label != blank and section.settings.button_link != blank %}<a href="{{ section.settings.button_link }}">{% endif -%}
+        <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;">
+          
+          <img class="feature-row__image lazyload"
+              data-src="{{ img_url }}"
+              data-widths="[180, 360, 540, 720, 900, 1080]"
+              data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ section.settings.image.alt }}">
+        </div>
+        {%- if section.settings.button_label != blank and section.settings.button_link != blank %}</a>{% endif -%}
+      {%- else -%}
+        <div class="image-wrap">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endcapture -%}
+
+<div class="feature-row" data-aos>
+  {%- if section.settings.layout == 'left' -%}
+    {{ image_layout }}
+  {%- endif -%}
+
+  <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}" style="background-color: {{ section.settings.background_color }};">
+    <div class="text-container">
+      {%- if section.settings.title != blank -%}
+        <p class="h2">{{ section.settings.title | escape }}</p>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="rte featured-row__subtext">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.settings.button_link_1 != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn" style="background-color: {{ section.settings.button_color }};">
+          {{ section.settings.button_label_1 }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.button_link_2 != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn" style="background-color: {{ section.settings.button_color }};">
+          {{ section.settings.button_label_2 }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if section.settings.layout == 'right' -%}
+    {{ image_layout }}
+  {%- endif -%}
+</div>
+
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Full image with text",
+    "class": "the-ideal-sunday-full-image-with-text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "image_width",
+        "label": "Image width",
+        "default": 500,
+        "min": 100,
+        "max": 500,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "Button label 1",
+        "default": "Optional button"
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button link 1"
+      },
+      {
+        "type": "text",
+        "id": "button_label_2",
+        "label": "Button label 2",
+        "default": "Optional button"
+      },
+      {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Button link 2"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Colour",
+        "default": "#fff"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Colour",
+        "default": "#fff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Full image with text",
+        "category": "The Ideal Sunday Assets"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,3 +1,6 @@
+{% assign description_base = product.description | split: '<h4>' | first %}
+{% assign description_tabs = product.description | replace_first: description_base, '' %}
+  
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
 
@@ -155,6 +158,8 @@
               {{ current_variant.price | money }}
             </span>
 
+            {%- render 'the-ideal-sunday-product-review-stars' -%}
+
             {%- if settings.product_save_amount -%}
               {%- if settings.product_save_type == 'dollar' -%}
                 {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
@@ -236,7 +241,7 @@
               {%- endif -%}
             {%- endif -%}
 
-            <hr class="hr--medium">
+            <div class="product-short-description">{{ description_base }}</div>
 
             {%- unless isModal -%}
               {% comment %}
@@ -249,6 +254,9 @@
                 product: product,
                 current_variant: current_variant
               -%}
+              <hr class="hr--medium">
+              {%- render 'the-ideal-sunday-delivery-rewards', current_variant: current_variant -%}
+              {%- render 'the-ideal-sunday-bundle-save' -%}
             {%- else -%}
               <div
                 id="ProductFormHolder-{{ section_id }}"
@@ -291,7 +299,7 @@
             {%- endif -%}
 
             {%- unless description_style == 'full' -%}
-              <div class="product-single__description rte">
+              <div class="product-single__description rte" data-station-tabs-app>
                 {{ product.description }}
               </div>
 
@@ -321,14 +329,20 @@
           </div>
         {%- endunless -%}
       </div>
-
-      {%- if description_style == 'full' -%}
-        <div class="product-single__description-full rte">
-          {{ product.description }}
-        </div>
-
-        {%- render 'product-additional-content', product: product, section_id: section_id -%}
-      {%- endif -%}
     </div>
+
+    {%- if description_style == 'full' -%}
+      <div class="station-tabs-wrapper">
+        <div class="page-width product-values-description-wrapper">
+            {%- render 'the-ideal-sunday-product-values' -%}
+          <div class="product-single__description-full rte" data-station-tabs-app>
+            {{ product.description }}
+          </div>
+        </div>
+      </div>
+
+      {%- render 'product-additional-content', product: product, section_id: section_id -%}
+    {%- endif -%}
+    
   </div>
 </div>

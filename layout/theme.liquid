@@ -82,6 +82,8 @@
     <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url | split: '?' | first }}">
   {%- endif -%}
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="{{ 'the-ideal-sunday.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script>
 
   {%- if request.page_type contains 'customers/' -%}
@@ -103,6 +105,7 @@
       </main>
 
       {%- section 'footer-promotions' -%}
+      {%- section 'the-ideal-sunday-company-values-footer' -%}
       {%- section 'footer' -%}
 
     </div>
@@ -125,5 +128,10 @@
     render 'video-modal'
     render 'photoswipe-template'
   -%}
+  
+  {%- render 'the-ideal-sunday-bundle-save-modal' -%}
+  {% render 'flits_snippet' %}
+  {% render 'smile-initializer' %}
+  {% include 'estimated-delivery-days'%}
 </body>
 </html>

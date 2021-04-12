@@ -1,0 +1,10 @@
+{
+  "csscomb.ignoreFilesOnSave": [
+    "./assets/theme.scss.liquid",
+    "./assets/theme.scss"
+  ],
+  "prettier.disableLanguages": [
+    "liquid"
+  ],
+  "prettier.requireConfig": true
+}

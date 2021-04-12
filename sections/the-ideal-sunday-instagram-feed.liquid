@@ -1,0 +1,53 @@
+<div class="page-width">
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h2>{{ section.settings.title | escape }}</h2>
+      <a target="_blank" rel="noopener" href="{{ settings.social_instagram_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
+        <p class="h6">{{ section.settings.handle | escape }}</p>
+      </a>
+    </div>
+  {% endif %}
+  <div class="instagram-feed"></div>
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "en": "Instagram Feed"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "en": "Heading"
+      },
+      "default": {
+        "en": "Shop Instagram"
+      }
+    },
+    {
+      "type": "text",
+      "id": "handle",
+      "label": {
+        "en": "Instagram Handle"
+      },
+      "default": {
+        "en": "@the.ideal.sunday"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Instagram Feed"
+      },
+      "category": {
+        "en": "The Ideal Sunday Assets"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -178,7 +178,7 @@
           <div class="product-single__description rte">
             {%- if section.settings.show_description -%}
               {%- unless product.empty? -%}
-                {{ product.description }}
+                <div data-station-tabs-app data-station-tabs-product="{{ product.handle }}">{{ product.description }}</div>
               {%- else -%}
                 {{ 'home_page.onboarding.product_description' | t }}
               {%- endunless -%}

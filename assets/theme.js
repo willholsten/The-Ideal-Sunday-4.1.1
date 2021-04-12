@@ -7092,5 +7092,4 @@ lazySizesConfig.expFactor = 4;
 
     document.dispatchEvent(new CustomEvent('page:loaded'));
   });
-
 })();

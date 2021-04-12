@@ -1,0 +1,38 @@
+<div id="ReviewsWidgetRichSnippets"></div>
+<script>
+  new ReviewsWidget('#ReviewsWidgetRichSnippets', {
+    store: "the-ideal-sunday",
+    widget: "combined-widget",
+    options: {
+      types: "product_review",
+      per_page: 20,
+      product_review: {
+        sku: "{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}",
+
+        /* Your custom Structured Data */
+        structured_data: {
+          category: {{ product.type | json }},
+          gtin8: "{{ product.selected_or_first_available_variant.barcode }}",
+          url: "{{ shop.url }}{{ product.url }}",
+          {% if variant.image %}
+          {% assign variant_image_size = variant.image.width | append: "x" %}
+          image: "http:{{ variant.image.src | img_url: variant_image_size }}",
+          {% endif %}
+          description: "{{ product.description | strip_html | strip_newlines | escape }}",
+          offers: [{
+            type: "Offer",
+            price: "{{ product.selected_or_first_available_variant.price | money_without_currency | replace : ',', '' }}",
+            priceCurrency: "{{ shop.currency }}",
+            url: "{{ shop.url }}{{ product.url }}",
+            availability: "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+            priceValidUntil: "{{ 'now' | date: '%s' | plus: 2592000 | date: '%Y-%m-%-d' }}",
+          }],
+          brand: {
+            type: "Brand",
+            name: "{{ product.vendor | escape }}",
+          }
+        },
+      },
+    },
+  });
+</script>

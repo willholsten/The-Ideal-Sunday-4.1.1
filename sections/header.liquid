@@ -163,7 +163,15 @@
 
               {%- if section.settings.main_menu_alignment != 'center-split' -%}
                 <div class="header-item header-item--logo">
-                  {%- render 'header-logo-block', section: section -%}
+                  <div class="the-ideal-sunday-wordmark">
+                    {%- render 'header-logo-block', section: section -%}
+                  </div>
+                  <a class="the-ideal-sunday-logo hide-logo site-logo" href="{{ routes.root_url }}">
+                    <img class="lazyload js"
+                    src="https://cdn.shopify.com/s/files/1/0283/1466/5034/files/The-Ideal-Sunday-Logo_a0155ff9-6212-4ca2-8c7a-f53389bf8686.svg?v=1602332605"
+                    alt="The Ideal Sunday Logo"
+                    >
+                  </a>
                 </div>
               {%- endif -%}
             {%- endif -%}
@@ -220,6 +228,7 @@
   {%- unless overlay_header or section.settings.announcement_above_header -%}
     {%- render 'announcement-bar', section: section -%}
   {%- endunless -%}
+  {%- render 'the-ideal-sunday-reviews-header' -%}
 </div>
 
 {% schema %}

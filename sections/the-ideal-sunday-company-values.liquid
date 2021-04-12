@@ -1,0 +1,97 @@
+  {%- if section.blocks.size > 0 -%}
+    {%- liquid
+      assign grid_item_width = 'medium-up--one-half'
+      if section.blocks.size == 3
+        assign grid_item_width = 'medium-up--one-third'
+      endif
+    -%}
+
+    <div class="company-values-inner" style="background-color: {{ section.settings.background_color }};"> 
+      <div class="page-width company-values-holder">
+        <div class="grid grid--flush-bottom">
+          {%- for block in section.blocks -%}
+            <div class="grid__item {{ grid_item_width }}" {{ block.shopify_attributes }} data-aos="row-of-3">
+              {%- if block.settings.enable_image -%}
+                <a href="{{ block.settings.button_link }}" class="article__grid-image" aria-label="{{ block.settings.title }}">
+                    <div class="image-wrap" style="background-color: {{ section.settings.background_color }};"></div>
+                </a>
+              {%- endif -%}
+              <div>
+                {%- if block.settings.title != blank -%}
+                  <div class="h3">{{ block.settings.title }}</div>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_label != blank -%}
+                  <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+                    {{ block.settings.button_label }}
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+{% schema %}
+  {
+    "name": "Company Values Homepage",
+    "max_blocks": 3,
+    "class": "company-values",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Colour",
+        "default": "#fff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "promotion",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "Show image",
+            "default": true
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Site-wide promotion"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "Optional button"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Company Values - Homepage",
+        "category": "The Ideal Sunday Assets"
+      }
+    ]
+    
+  }
+{% endschema %}

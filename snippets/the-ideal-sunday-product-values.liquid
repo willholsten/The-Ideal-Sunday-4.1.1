@@ -1,0 +1,31 @@
+{% if template == "product" %} 
+
+  {% assign vegan = product.tags | where: "Vegan Friendly" %}
+  {% assign biodegradable = product.tags | where: "Biodegradable" %}
+  {% assign compostable = product.tags | where: "Compostable" %}
+  {% assign extra_tree = product.tags | where: "Extra Tree" %}
+  {% assign handmade = product.tags | where: "Handmade" %}
+  {% assign natural = product.tags | where: "Natural" %}
+  {% assign organic = product.tags | where: "Organic" %}
+  {% assign recyclable = product.tags | where: "Recyclable" %}
+  {% assign uk_made = product.tags | where: "UK Made" %}
+  {% assign plastic_free = product.tags | where: "Plastic Free" %}
+  {% assign free_delivery = product.tags | where: "Free-Delivery" %}
+
+  {% assign values = vegan | concat: uk_made | concat: plastic_free | concat: compostable | concat: organic | concat: natural | concat: free_delivery | concat: extra_tree | concat: handmade | concat: recyclable | concat: biodegradable | sort: 'title' %}
+
+  {% if values.size > 0 %} 
+    <div class="product-values-wrapper">
+      <div class="product-values">
+        {% for tag in values %}
+            {% assign tag-file = tag | downcase | replace: " ", "-" | prepend: "icon-product-" | append: ".svg" %}
+            {% assign url = tag | downcase | replace: " ", "-" | prepend: "/collections/" | append: "-products" %}
+              <a href="{{url}}">
+                <img src="{{ tag-file | asset_url }}" alt="{{tag}}" onError="style.display = 'none';">
+              </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+

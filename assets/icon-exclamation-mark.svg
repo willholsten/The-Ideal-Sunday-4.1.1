@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+  <defs>
+    <clipPath id="clip-the-ideal-sunday-important">
+      <rect width="118" height="118"/>
+    </clipPath>
+  </defs>
+  <g id="the-ideal-sunday-important" clip-path="url(#clip-the-ideal-sunday-important)">
+    <g id="exclamation-mark" transform="translate(14.164 14.164)">
+      <path id="Path_53586" data-name="Path 53586" d="M44.836,0A44.836,44.836,0,1,0,89.672,44.836,44.838,44.838,0,0,0,44.836,0Zm0,81.265A36.429,36.429,0,1,1,81.265,44.836,36.428,36.428,0,0,1,44.836,81.265Zm0-61.6c-3.211,0-5.641,1.676-5.641,4.383V48.874c0,2.71,2.429,4.38,5.641,4.38,3.133,0,5.641-1.74,5.641-4.38V24.046C50.48,21.4,47.972,19.663,44.839,19.663Zm0,39.184a5.6,5.6,0,1,0,5.593,5.6A5.6,5.6,0,0,0,44.839,58.848Z" fill="#1a3555"/>
+    </g>
+  </g>
+</svg>

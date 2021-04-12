@@ -1,0 +1,20 @@
+<a class="product-review-stars-container" href="#product-reviews">
+    <span class="ruk_rating_snippet product-review-stars" data-sku="{%- if sku -%}
+        {{ sku }}
+    {% else %}
+        {{ product.variants | map: 'sku' | join: ';' }}
+    {%- endif -%}">
+    </span>
+</a>
+
+<script src="https://widget.reviews.co.uk/rating-snippet/dist.js"></script>
+
+<script>
+    window.onload = function() {
+        ratingSnippet("ruk_rating_snippet",{
+        store: "the-ideal-sunday",
+        color: "#FD4B7F",
+        linebreak: false
+    });
+}
+</script>
