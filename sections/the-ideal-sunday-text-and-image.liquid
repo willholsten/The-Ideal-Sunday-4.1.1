@@ -39,12 +39,12 @@
         <div class="rte featured-row__subtext">{{ section.settings.text }}</div>
       {%- endif -%}
       {%- if section.settings.button_link_1 != blank -%}
-        <a href="{{ section.settings.button_link }}" class="btn" style="background-color: {{ section.settings.button_color }};">
+        <a href="{{ section.settings.button_link_1 }}" class="btn" style="background-color: {{ section.settings.button_color }};">
           {{ section.settings.button_label_1 }}
         </a>
       {%- endif -%}
       {%- if section.settings.button_link_2 != blank -%}
-        <a href="{{ section.settings.button_link }}" class="btn" style="background-color: {{ section.settings.button_color }};">
+        <a href="{{ section.settings.button_link_2 }}" class="btn" style="background-color: {{ section.settings.button_color }};">
           {{ section.settings.button_label_2 }}
         </a>
       {%- endif -%}
@@ -61,7 +61,7 @@
 
 {% schema %}
   {
-    "name": "Full image with text",
+    "name": "Full mage With Text",
     "class": "the-ideal-sunday-full-image-with-text",
     "settings": [
       {
@@ -150,7 +150,7 @@
     ],
     "presets": [
       {
-        "name": "Full image with text",
+        "name": "Full Image With Text",
         "category": "The Ideal Sunday Assets"
       }
     ]

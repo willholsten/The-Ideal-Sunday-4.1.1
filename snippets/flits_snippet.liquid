@@ -219,7 +219,7 @@
             border-radius:4px;
           }
           .flits-bold-text{
-            font-weight:bold;
+            font-weight:400;
             color: #3d4246;
           }
           .flits-bold-text .flits-text-muted{
@@ -250,9 +250,14 @@
           /*================
           FLITS: CUSTOMER ACCOUNTS
           ================*/ 
+          /* Customer Sign In */
+          #CustomerLoginForm {
+            max-width: 700px;
+            margin: 0 auto;
+          }
           /* Page Layout */
           .flits-code-snippet {
-            background-color: var(--colorFooter);
+            background-color: var(--colorLightBlue);
             padding-top: 55px;
             padding-bottom: 40px;
           }
@@ -262,7 +267,7 @@
               }
           }
           .flits-pages {
-            background-color: var(--colorFooter) !important;
+            background-color: var(--colorLightBlue) !important;
           }
           .flits-page {
               display: flex;
@@ -275,12 +280,16 @@
             }
             .flits-page .flits-pages div[data-type=page] {
               padding: 15px 0;
-              background-color: var(--colorFooter);
+              background-color: var(--colorLightBlue);
             }
             @media only screen and (min-width: 993px) {
               .flits-page .flits-pages div[data-type=page] {
                 padding: 0 0 0 30px;
               }
+            }
+
+            .flits-order-details-value {
+              font-weight: 400;
             }
 
             /* Forms */
@@ -344,6 +353,7 @@
             }
             .flits-btn-custom {
                 color: var(--colorTextBody) !important;
+                font-weight: 400;
             }
             .flits-btn-custom:hover {
                 color: var(--colorTextBody) !important;

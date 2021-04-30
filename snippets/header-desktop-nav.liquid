@@ -75,6 +75,15 @@
                     {%- endif -%}
                   {%- endif -%}
 
+                  <!-- {%- liquid
+                    assign subcollection_handle = childlink.title | replace: ' ', '_'
+                  -%}
+
+                  <span
+                    class="megamenu__colection-image"
+                    style="background-image: url({{ collections[subcollection_handle].image | img_url: '400x' }})">
+                  </span> -->
+
                   <div class="h5">
                     <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                   </div>

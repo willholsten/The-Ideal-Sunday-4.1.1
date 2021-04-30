@@ -16,6 +16,13 @@
   </div>
 {%- endif -%}
 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {% when 'intro-text'%}
+      {%- render 'the-ideal-sunday-page-block-rich-text-intro', block: block -%}
+  {%- endcase -%}
+{%- endfor -%}
+
 {%- if section.blocks.size > 0 -%}
   <div class="page-width page-width--narrow page-content">
     <div class="page-blocks page-blocks--flush" itemscope itemtype="https://schema.org/FAQPage">
@@ -85,6 +92,63 @@
       ]
     },
     "blocks": [
+    {
+        "type": "intro-text",
+        "name": "Intro text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Sub Title"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Intro Text"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Centered"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "narrow_column",
+            "label": "Narrow column",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "enlarge_text",
+            "label": "Enlarge text"
+          },
+          {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background colour",
+            "default": "#FFFAF4"
+          }
+        ]
+      },
       {
         "type": "rich-text",
         "name": "Rich text",

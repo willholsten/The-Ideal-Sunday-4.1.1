@@ -13,9 +13,9 @@
         </div>
       </div>
 
-      <div class="cart-discount-wrapper appear-animation appear-delay-1">
-        {%- render 'the-ideal-sunday-bundle-save' -%}
-      </div>
+      <!-- <div class="cart-discount-wrapper appear-animation appear-delay-1">
+        {%- render 'the-ideal-sunday-bundle-save-drawer' -%}
+      </div> -->
 
       <div class="drawer__inner">
         <div class="drawer__scrollable">
@@ -30,9 +30,9 @@
         </div>
 
         <div class="cart-upsell appear-animation appear-delay-5"></div>
-        <div class="cart-bundle-discount appear-animation appear-delay-5">
+        <!-- <div class="cart-bundle-discount appear-animation appear-delay-5">
           <span class="h6">Use Code:&nbsp;</span><span class="h6 cart-bundle-discount-code"></span><span class="h6">&nbsp;at checkout</span>
-        </div>
+        </div> -->
 
         <div class="drawer__footer appear-animation appear-delay-4">
           <div data-discounts>
@@ -55,11 +55,11 @@
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
-          <div class="cart__item-row text-center">
+          <!-- <div class="cart__item-row text-center">
             <small>
               {{ 'cart.general.shipping_at_checkout' | t }}<br />
             </small>
-          </div>
+          </div> -->
 
           {% if settings.cart_terms_conditions_enable %}
             <div class="cart__item-row cart__terms">

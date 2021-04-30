@@ -106,6 +106,7 @@
             <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t }}</span>
           </button>
         {%- endif -%}
+        {% render 'flits_wishlist_snippet' with 'flits_product_page_wsl_btn' %}
       </div>
 
       {%- if has_video and video_modal -%}

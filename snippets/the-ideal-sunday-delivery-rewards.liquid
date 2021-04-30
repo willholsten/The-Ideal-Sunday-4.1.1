@@ -1,16 +1,15 @@
-<div class="delivery-rewards-wrapper {% unless current_variant.available %} hide{% endunless %}">
-    <div class="delivery-wrapper">
-        <img src="{{ 'icon-delivery.svg' | asset_url }}" alt="Free Delivery over £40">
-        <span><small>£2.95 Express UK Delivery. Free for orders over £40</small></span>
-    </div>
-    <div class="delivery-wrapper">
-        <img src="{{ 'icon-delivery.svg' | asset_url }}" alt="Estimated Delivery">
+<div class="delivery-wrapper {% unless current_variant.available %} hide{% endunless %}">
+    <div>
+        <img src="{{ 'icon-delivery-truck-light-square.svg' | asset_url }}" alt="Estimated Delivery">
         <div class='delivery_date_shortcode'></div>
     </div>
-    <div class="rewards-wrapper">
-        <img src="{{ 'icon-rewards.svg' | asset_url }}" alt="Earn Reward Points">
-        <span><small>You could earn <a href="#smile-home">{{ product.price | divided_by: 100.00 | times: 5 | round }} Sunday Points</a></small></span>
+    <div class="{% unless current_variant.available %} hide{% endunless %}">
+        <img src="{{ 'icon-present-light-square.svg' | asset_url }}" alt="Free Delivery over £40">
+        <small>You could earn <a href="#smile-home">
+            {{ product.price | divided_by: 100.00 | times: 5 | round }} Sunday Points
+        </a></small>
     </div>
 </div>
+
 
             

@@ -30,6 +30,15 @@
           when 'rich-text'
             render 'page-block-rich-text', block: block
 
+          when 'intro-text'
+          render 'the-ideal-sunday-page-block-rich-text-intro', block: block
+
+          when 'text-and-full-image'
+            render 'the-ideal-sunday-page-block-text-and-full-image', block: block
+
+          when 'text-and-floating-image'
+          render 'the-ideal-sunday-page-block-text-and-floating-image', block: block
+          
           when 'text-and-image'
             render 'page-block-text-and-image', block: block
 

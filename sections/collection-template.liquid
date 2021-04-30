@@ -10,16 +10,8 @@
 
   {%- if section.settings.description_position == 'top' -%}
     {%- if collection.description != blank -%}
-      <!-- <div class="rte">
+      <div class="rte">
         {{ collection.description }}
-      </div> -->
-      <div class="collection-description">
-        <div class="collection-description-closed">
-          {{ collection.description }}
-        </div>
-        <div class="read-more-button-container">
-          <button class="btn btn--secondary btn--small read-more-button">Read More</button>
-        </div>
       </div>
       <hr class="hr--clear hr--small">
     {%- endif -%}
@@ -105,13 +97,13 @@
 
   {%- if section.settings.description_position == 'bottom' -%}
     {%- if collection.description != blank -%}
-      <hr class="hr--clear hr--small">
       <!-- <div class="rte">
         {{ collection.description }}
       </div> -->
       <div class="collection-description">
+        <b>{{ collection.title}} at The Ideal Sunday</b>
+        <hr class="hr--clear hr--small">
         <div class="collection-description-closed">
-          <p><b>{{ collection.title }}</b> at The Ideal Sunday</p>
           {{ collection.description }}
         </div>
         <div class="read-more-button-container">
@@ -225,3 +217,4 @@
     ]
   }
 {% endschema %}
+

@@ -1,42 +1,42 @@
 {
   "current": {
     "color_body_bg": "#ffffff",
-    "color_body_text": "#023A7B",
-    "color_price": "#023A7B",
+    "color_body_text": "#235896",
+    "color_price": "#235896",
     "color_savings_text": "#C20000",
-    "color_borders": "#F5F5F5",
-    "color_button": "#ffe980",
-    "color_button_text": "#023A7B",
-    "color_sale_tag": "#1a3555",
+    "color_borders": "#e3eaee",
+    "color_button": "#FFEE6E",
+    "color_button_text": "#235896",
+    "color_sale_tag": "#235896",
     "color_cart_dot": "#fd4b7f",
     "color_small_image_bg": "#ffffff",
-    "color_large_image_bg": "#1a3555",
+    "color_large_image_bg": "#ffffff",
     "color_header": "#ffffff",
-    "color_header_text": "#023A7B",
-    "color_announcement": "#ffe980",
-    "color_announcement_text": "#023A7B",
-    "color_footer": "#134784",
+    "color_header_text": "#235896",
+    "color_announcement": "#FFEE6E",
+    "color_announcement_text": "#235896",
+    "color_footer": "#235896",
     "color_footer_text": "#ffffff",
     "color_drawer_background": "#ffffff",
-    "color_drawer_text": "#023A7B",
-    "color_drawer_border": "#c0cbd8",
-    "color_drawer_button": "#ffe980",
-    "color_drawer_button_text": "#023A7B",
+    "color_drawer_text": "#235896",
+    "color_drawer_border": "#f5f5f5",
+    "color_drawer_button": "#FFEE6E",
+    "color_drawer_button_text": "#1E49D6",
     "color_modal_overlays": "#1a3555",
-    "color_image_text": "#ffffff",
+    "color_image_text": "#235896",
     "color_image_overlay": "#1a3555",
-    "color_image_overlay_opacity": 20,
-    "color_image_overlay_text_shadow": 25,
+    "color_image_overlay_opacity": 0,
+    "color_image_overlay_text_shadow": 0,
     "type_header_font_family": "din_next_n5",
-    "type_header_spacing": "0",
+    "type_header_spacing": "-25",
     "type_header_base_size": 48,
-    "type_header_line_height": 1.3,
+    "type_header_line_height": 1.1,
     "type_header_capitalize": false,
     "type_headers_align_text": true,
     "type_base_font_family": "din_next_n3",
-    "type_base_spacing": "25",
-    "type_base_size": 18,
-    "type_base_line_height": 1.4,
+    "type_base_spacing": "0",
+    "type_base_size": 17,
+    "type_base_line_height": 1.5,
     "type_body_align_text": false,
     "type_navigation_style": "body",
     "type_navigation_size": 16,
@@ -63,19 +63,20 @@
     "inventory_transfers_enable": true,
     "product_zoom_enable": true,
     "product_color_swatches": true,
-    "collection_color_swatches": true,
+    "collection_color_swatches": false,
     "product_contact": false,
     "enable_product_reviews": false,
     "reviews_layout": "full",
     "collection_grid_style": "below",
-    "collection_grid_shape": "square",
-    "collection_grid_image": "product",
+    "collection_grid_shape": "landscape",
+    "collection_grid_image": "collection",
     "collection_grid_text_align": "center",
     "collection_grid_tint": "#000000",
     "collection_grid_opacity": 10,
-    "collection_grid_gutter": true,
+    "collection_grid_gutter": false,
     "cart_type": "drawer",
     "cart_icon": "bag-minimal",
+    "cart_additional_buttons": false,
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
     "social_facebook_link": "https:\/\/www.facebook.com\/theidealsunday",
@@ -85,26 +86,26 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "favicon": "shopify:\/\/shop_images\/Logo_-_Transparent.png",
+    "favicon": "shopify:\/\/shop_images\/favicon_6c34e7ba-1a59-431a-9d9e-668d13de1543.png",
     "search_type": "product,article",
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
     "show_breadcrumbs": false,
     "show_breadcrumbs_collection_link": false,
-    "disable_animations": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/The_-_Ideal_-_Sunday_-_Logo_-_Wordmark_PNG.png",
+    "disable_animations": true,
+    "flits_primary_button_color": "#235896",
+    "flits_primary_button_background_color": "#FFEE6E",
+    "flits_default_button_color": "#235896",
+    "flits_default_button_background_color": "#FFEE6E",
+    "checkout_logo_image": "shopify:\/\/shop_images\/The-Ideal-Sunday-Wordmark_5056fc6e-466e-4448-ad73-18d10e0fac43.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#f8f8f8",
-    "checkout_accent_color": "#1201FE",
-    "checkout_button_color": "#ffe256",
+    "checkout_accent_color": "#235896",
+    "checkout_button_color": "#FFEE6E",
     "checkout_error_color": "#ff6d6d",
-    "flits_primary_button_color": "#023A7B",
-    "flits_primary_button_background_color": "#ffe256",
-    "flits_default_button_color": "#023A7B",
-    "flits_default_button_background_color": "#ffe256",
     "breadcrumb": false,
     "sections": {
       "header": {
@@ -113,7 +114,7 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "desktop_logo_width": 300,
+              "desktop_logo_width": 240,
               "mobile_logo_width": 200
             }
           },
@@ -128,34 +129,26 @@
           "1524770296206": {
             "type": "announcement",
             "settings": {
-              "text": "Free Express UK Delivery over £40",
+              "text": "Free UK Delivery over £40",
               "link_text": "",
               "link": "shopify:\/\/pages\/delivery-returns"
-            }
-          },
-          "c8e6ebce-e37f-4f78-a328-e29a04da3284": {
-            "type": "announcement",
-            "settings": {
-              "text": "Spend & Save - Get up to £20 off",
-              "link_text": ""
             }
           }
         },
         "block_order": [
           "1524770014057",
           "1524770292306",
-          "1524770296206",
-          "c8e6ebce-e37f-4f78-a328-e29a04da3284"
+          "1524770296206"
         ],
         "settings": {
-          "main_menu_link_list": "test-4-1-1-1",
-          "mega_menu_images": false,
+          "main_menu_link_list": "header-menu",
+          "mega_menu_images": true,
           "main_menu_alignment": "left-center",
           "header_style": "sticky",
           "sticky_index": false,
           "sticky_collection": false,
           "announcement_compact": true,
-          "announcement_above_header": true,
+          "announcement_above_header": false,
           "toolbar_menu": "",
           "toolbar_social": false,
           "show_locale_selector": false,
@@ -166,20 +159,11 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "fdb26ab8-c381-4308-a1ab-0c520b24b201": {
-            "type": "custom",
-            "settings": {
-              "show_footer_title": false,
-              "title": "",
-              "text": "<p>The Ideal Sunday<\/p>",
-              "container_width": 95
-            }
-          },
           "ae18daaa-5c69-4a73-ac76-3090a18285c1": {
             "type": "custom",
             "settings": {
               "show_footer_title": true,
-              "title": "About Us",
+              "title": "The Ideal Sunday",
               "text": "<p>Eco friendly, plastic free and zero waste products from UK brands for those who care for our planet and want to make small changes towards living a greener lifestyle - Welcome to the Ideal Sunday, the eco shop who plant a tree for every order 🌳<\/p>",
               "container_width": 30
             }
@@ -208,25 +192,13 @@
               "text": "<p>Sign up for new arrivals, offers and get £5 off your first order over £25.<\/p>",
               "container_width": 30
             }
-          },
-          "4774eddb-4144-4325-af7f-386749f21096": {
-            "type": "custom",
-            "settings": {
-              "show_footer_title": false,
-              "title": "Partners",
-              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Partners.png",
-              "text": "",
-              "container_width": 20
-            }
           }
         },
         "block_order": [
-          "fdb26ab8-c381-4308-a1ab-0c520b24b201",
           "ae18daaa-5c69-4a73-ac76-3090a18285c1",
           "1494301487049",
           "cb160768-04fb-45a3-bfc0-d3f4b5aed578",
-          "1494292487693",
-          "4774eddb-4144-4325-af7f-386749f21096"
+          "1494292487693"
         ],
         "settings": {
           "show_locale_selector": true,
@@ -243,7 +215,7 @@
           "description_position": "bottom",
           "subcollection_style": "above",
           "subcollections_per_row": 5,
-          "enable_collection_count": true,
+          "enable_collection_count": false,
           "per_row": 3,
           "rows_per_page": 8,
           "mobile_flush_grid": false
@@ -252,12 +224,13 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "description_style": "full",
+          "description_style": "default",
           "social_enable": false,
           "image_position": "left",
           "image_size": "large",
           "thumbnail_position": "beside",
           "thumbnail_arrows": false,
+          "mobile_layout": "full",
           "enable_video_looping": true,
           "product_video_style": "muted"
         }
@@ -270,7 +243,8 @@
           "blog_show_date": true,
           "blog_show_comments": true,
           "blog_show_author": true,
-          "social_sharing_blog": true
+          "social_sharing_blog": true,
+          "blog_show_previous_and_next_buttons": true
         }
       },
       "blog-template": {
@@ -477,28 +451,20 @@
               "collapsed": false
             }
           },
-          "694afdb1-2085-4b92-973f-6bae4175264b": {
+          "562cf974-d293-40cb-a885-d10980612459": {
             "type": "tags_group",
             "settings": {
-              "title": "Product Type",
-              "tag_list": "Beard Care\nBeauty Accessories\nBin Liners\nBody Scrubs\nDish Soap\nBody Care\nBowls & Cutlery\nCleaning Brushes\nCoffee Cups\nCombs & Brushes\nCotton Buds\nDental Floss\nDeodorant\nDrinking Bottles\nDrinking Cups\nEssential Oils\nFace Care\nFace Coverings\nFeminine Hygiene\nFood Prep\nFood Storage\nHand Care\nHand Sanitiser\nHand Soap\nHome Storage\nKitchen Linen\nLaundry\nLip Care\nLoofahs & Flannels\nMouthwash\nPlasters\nProduce Bags\nShampoo & Conditioner\nShaving\nSoap Dishes\nSponges & Scourers\nSpray Cleaners\nStraws\nSuncare\nTea & Coffee\nThrows\nToilet Roll\nToothbrushes\nToothpaste\nWashing Up",
-              "collapsed": false
+              "title": "Brands",
+              "tag_list": "Acala\nBambu\nBeeBee Wraps\nBiork\nCeae\nChewsy\nCorinne Taylor\nEco Living\nEcoCoconut\nEcologi\nElephant Box\nFushi\nGeorganics\nGreen Island\nHaoma\nKind Bag\nLoofCo\nMilly & Sissy\nNeat\nNeon Kactus\nOcean Bottle\nOceanSaver\nOne Tree Planted\nOur Tiny Bees\nPatch\nPercol\nQwetch\nReSpiin\nRuby Cup\nSafix\nShark\nSkin & Tonic\nSol De Ibiza\nThe Ideal Sunday\nThe Nature Of Things\nThe Swag\nTru Earth\nTruthbrush\nUpCircle\nZero Waste Club\nZero Waste Path",
+              "collapsed": true
             }
           },
           "7adf71f6-5585-45f9-a4e9-721dce4c5a1f": {
             "type": "subcollections",
             "settings": {
-              "enable_subsubcollections": true,
+              "enable_subsubcollections": false,
               "enable_count": false,
-              "collapsed": true
-            }
-          },
-          "562cf974-d293-40cb-a885-d10980612459": {
-            "type": "tags_group",
-            "settings": {
-              "title": "Brands",
-              "tag_list": "Acala\nBambu\nBeeBee Wraps\nBiork\nCeae\nChewsy\nEco Living\nEcoCoconut\nElephant Box\nFushi\nGeorganics\nGreen Island\nHaoma\nKind Bag\nLoofCo\nMilly & Sissy\nNeat\nNeon Kactus\nOcean Bottle\nOceanSaver\nOne Tree Planted\nOur Tiny Bees\nPatch\nPercol\nQwetch\nReSpiin\nRuby Cup\nSafix\nShark\nSkin & Tonic\nThe Ideal Sunday\nThe Nature Of Things\nThe Swag\nTru Earth\nTruthbrush \nUpCircle\nZero Waste Club\nZero Waste Path",
-              "collapsed": true
+              "collapsed": false
             }
           },
           "390e15a4-de7f-49d2-9f0e-268bb7885f3b": {
@@ -512,31 +478,15 @@
         },
         "block_order": [
           "9856898a-9af5-4de6-b6cd-c8e5bc30f082",
-          "694afdb1-2085-4b92-973f-6bae4175264b",
-          "7adf71f6-5585-45f9-a4e9-721dce4c5a1f",
           "562cf974-d293-40cb-a885-d10980612459",
+          "7adf71f6-5585-45f9-a4e9-721dce4c5a1f",
           "390e15a4-de7f-49d2-9f0e-268bb7885f3b"
         ],
         "settings": {
           "enable_sidebar": true,
-          "filter_style": "drawer",
+          "filter_style": "sidebar",
           "tags_combine": true,
           "enable_sort": true
-        }
-      },
-      "1525115199973": {
-        "type": "blog-posts",
-        "settings": {
-          "title": "The Eco Journal",
-          "blog": "eco-journal",
-          "post_limit": 3,
-          "blog_show_tags": false,
-          "blog_show_date": true,
-          "blog_show_comments": false,
-          "blog_show_author": false,
-          "view_all": true,
-          "blog_image_size": "landscape",
-          "divider": false
         }
       },
       "1525295772132": {
@@ -553,67 +503,15 @@
       },
       "collection-promotions": {
         "type": "collection-promotions",
-        "blocks": {
-          "1526403837307": {
-            "type": "banner",
-            "settings": {
-              "promo_collection": "",
-              "heading": "Spend & Save:",
-              "text": "Get up to £20 off + Free delivery",
-              "label": "",
-              "color_tint": "#fd4b7f",
-              "color_tint_opacity": 8,
-              "framed": false
-            }
-          }
-        },
-        "block_order": [
-          "1526403837307"
-        ],
         "settings": {
           "gutter_size": 20
         }
       },
       "footer-promotions": {
         "type": "footer-promotions",
-        "blocks": {
-          "footer-promotions-0": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "title": "Brands you can trust",
-              "text": "<p>We stand behind the products we sell - They are all ethically sourced and things we love to use ourselves.<\/p>",
-              "button_label": ""
-            }
-          },
-          "footer-promotions-1": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "title": "Supporting small business",
-              "text": "<p>We are a small business and we value supporting other small UK businesses.<\/p>",
-              "button_label": ""
-            }
-          },
-          "footer-promotions-2": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "title": "Let's grow together",
-              "text": "<p>Same day dispatch before 2PM, free  delivery over £40 and no questions asked returns.<\/p>",
-              "button_label": ""
-            }
-          }
-        },
-        "block_order": [
-          "footer-promotions-0",
-          "footer-promotions-1",
-          "footer-promotions-2"
-        ],
         "settings": {
           "hide_homepage": true,
-          "image_size": "square",
-          "background_color": "#fff"
+          "image_size": "square"
         }
       },
       "list-collections-template": {
@@ -643,6 +541,18 @@
       "page-faq-template": {
         "type": "page-faq-template",
         "blocks": {
+          "a49d7f28-95a1-47fe-b9cb-050632080f67": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Frequently Asked Questions",
+              "title": "Get to know how we operate",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#FFFAF4"
+            }
+          },
           "645d7b77-b515-4666-b051-adbaa47a9bb0": {
             "type": "rich-text",
             "settings": {
@@ -747,6 +657,7 @@
           }
         },
         "block_order": [
+          "a49d7f28-95a1-47fe-b9cb-050632080f67",
           "645d7b77-b515-4666-b051-adbaa47a9bb0",
           "4331918f-bc25-45ac-a4ca-18b80f3495d9",
           "abdaa23e-13b6-442c-98f2-84021b6f0547",
@@ -763,7 +674,7 @@
           "page-faq-template-4"
         ],
         "settings": {
-          "page_title_enable": true,
+          "page_title_enable": false,
           "page_content_enable": false
         }
       },
@@ -775,16 +686,16 @@
             "settings": {
               "subheading": "",
               "heading": "Ocean Bottle",
-              "textarea": "Each bottle funds the collection of 1000 single use bottles.",
-              "cta_text1": "Shop Now",
+              "textarea": "Each bottle funds the \ncollection of 1000 single \nuse bottles.",
+              "cta_text1": "Shop Ocean Bottle",
               "cta_link1": "shopify:\/\/products\/reusable-insulated-bottle",
               "cta_text2": "",
-              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Ocean_Bottle.jpg",
+              "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Ocean_Bottle_b3a5b192-2667-4721-8aa1-07dcac10f14e.jpg",
               "video_url": "",
               "width": "33",
               "height": 600,
-              "text_size": 160,
-              "text_align": "vertical-center horizontal-center",
+              "text_size": 130,
+              "text_align": "vertical-bottom horizontal-right",
               "focal_point": "center",
               "color_accent": "#ffffff",
               "boxed": false,
@@ -795,18 +706,18 @@
             "type": "advanced",
             "settings": {
               "subheading": "",
-              "heading": "Essential Oils",
-              "textarea": "Where luxury meets sustainability.",
-              "cta_text1": "Shop The Collection",
-              "cta_link1": "shopify:\/\/collections\/essential-oils",
+              "heading": "Haoma",
+              "textarea": "All natural, organic \ndeodorants & \nhand sanitisers.",
+              "cta_text1": "Shop Haoma",
+              "cta_link1": "shopify:\/\/collections\/haoma",
               "cta_text2": "",
-              "image": "shopify:\/\/shop_images\/TheNatureofThings-65_2048x_2edeb43f-34d2-4510-8ff2-e01d90654d5e.jpg",
+              "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Haoma.jpg",
               "video_url": "",
               "width": "33",
               "height": 600,
-              "text_size": 160,
-              "text_align": "vertical-center horizontal-center",
-              "focal_point": "20% 50%",
+              "text_size": 130,
+              "text_align": "vertical-top horizontal-right",
+              "focal_point": "center",
               "color_accent": "#ffffff",
               "boxed": false,
               "framed": false
@@ -816,17 +727,17 @@
             "type": "advanced",
             "settings": {
               "subheading": "",
-              "heading": "UpCircle",
-              "textarea": "Skin care made from recycled coffee grounds.",
-              "cta_text1": "Shop UpCircle",
-              "cta_link1": "shopify:\/\/collections\/upcircle",
+              "heading": "Neat",
+              "textarea": "Cleaner refills.\nJust add water.",
+              "cta_text1": "Shop Neat",
+              "cta_link1": "shopify:\/\/collections\/neat",
               "cta_text2": "",
-              "image": "shopify:\/\/shop_images\/UpCircle-Face-Cream-2.jpg",
+              "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Neat.jpg",
               "video_url": "",
               "width": "33",
               "height": 600,
-              "text_size": 160,
-              "text_align": "vertical-center horizontal-center",
+              "text_size": 130,
+              "text_align": "vertical-top horizontal-right",
               "focal_point": "top",
               "color_accent": "#ffffff",
               "boxed": false,
@@ -858,56 +769,25 @@
           "divider": false
         }
       },
-      "161374071425f58df7": {
-        "type": "background-image-text",
-        "settings": {
-          "subtitle": "Introducing Corinne Taylor",
-          "title": "Plant based, cruelty free skin care.",
-          "text": "<p>Handcrafted in the UK.<\/p>",
-          "button_label": "Shop Now",
-          "button_link": "shopify:\/\/collections\/corinne-taylor",
-          "image": "shopify:\/\/shop_images\/Corinne-Taylor-Desktop.jpg",
-          "focal_point": "center",
-          "layout": "right",
-          "height": 650,
-          "framed": false,
-          "parallax": false
-        }
-      },
-      "16168747060c4379dc": {
-        "type": "text-and-image",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/Our-Story-Profile.jpg",
-          "image_width": 370,
-          "subtitle": "Hey there",
-          "title": "Welcome to The Ideal Sunday",
-          "text": "<p>Inspired by a walk in the woods one sunny December afternoon, The Ideal Sunday exists as a place to find eco-friendly and natural products for a healthier you and a healthier planet. <\/p>",
-          "button_label": "Read Our Story",
-          "button_link": "shopify:\/\/pages\/our-story",
-          "layout": "left",
-          "divider": true
-        }
-      },
       "1618082935e0f46fa8": {
         "type": "the-ideal-sunday-company-reviews",
         "settings": {
           "full_width": true,
-          "space_around": true
+          "space_around": false
         }
       },
       "16182285837ec47354": {
         "type": "the-ideal-sunday-text-and-image",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Eco_living_homepage.jpg",
+          "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Gift_4fb824cb-e3e3-472b-b2d6-ce4cc22395bc.png",
           "image_width": 500,
-          "title": "Welcome to our store.",
-          "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+          "title": "Hey, we're The Ideal Sunday!",
+          "text": "<p>We&#x27;re your one stop eco shop, here to bring you the best range of sustainable products, supporting some incredible small businesses, and planting a forest along the way.<\/p>",
           "button_label_1": "Our Story",
           "button_link_1": "shopify:\/\/pages\/our-story",
           "button_label_2": "Our Values",
           "button_link_2": "shopify:\/\/pages\/our-values",
-          "button_color": "#ffe980",
+          "button_color": "#ffee6e",
           "layout": "left",
           "divider": false,
           "background_color": "#fffaf4"
@@ -920,8 +800,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Brands you can trust",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "Ethical brands",
+              "text": "<p>We stand behind the products we sell - They are ethically sourced and things we love to use ourselves!<\/p>",
               "button_label": ""
             }
           },
@@ -929,8 +809,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Supporting small business",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "Shop small",
+              "text": "<p>We love working with small businesses across the UK to bring you the products that matter most to you.<\/p>",
               "button_label": ""
             }
           },
@@ -938,8 +818,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Let's grow together",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "We give back",
+              "text": "<p>We’ve pledged to plant a tree for every order and you can plant more at checkout. <\/p>",
               "button_label": ""
             }
           }
@@ -960,8 +840,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Brands you can trust",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "Ethical brands",
+              "text": "<p>We stand behind the products we sell - They are ethically sourced and things we love to use ourselves!<\/p>",
               "button_label": ""
             }
           },
@@ -969,8 +849,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Supporting small business",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "Shop small",
+              "text": "<p>We love working with small businesses across the UK to bring you the products that matter most to you.<\/p>",
               "button_label": ""
             }
           },
@@ -978,8 +858,8 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Let's grow together",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "title": "We give back",
+              "text": "<p>We’ve pledged to plant a tree for every order and you can plant more at checkout.<\/p>",
               "button_label": ""
             }
           }
@@ -993,18 +873,489 @@
           "hide_homepage": true,
           "background_color": "#fffaf4"
         }
+      },
+      "1618247362f965c428": {
+        "type": "slideshow",
+        "blocks": {
+          "1618247362f965c428-0": {
+            "type": "image",
+            "settings": {
+              "top_subheading": "",
+              "title": "Your one stop\neco shop.",
+              "title_size": 70,
+              "subheading": "Everything you need to take care of the things that matter... Just like these plastic free Mouthwash Tablets.",
+              "link": "shopify:\/\/collections\/georganics",
+              "link_text": "Shop georganics",
+              "link_2": "shopify:\/\/collections\/new-arrivals",
+              "link_text_2": "New Arrivals",
+              "color_accent": "#ffffff",
+              "text_align": "vertical-center horizontal-left",
+              "image": "shopify:\/\/shop_images\/Georganics-Desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Georganics-Mobile_ae0d71c4-9d5a-4f16-9aed-78d3e65c4f35.jpg",
+              "overlay_opacity": 0,
+              "focal_point": "top center"
+            }
+          }
+        },
+        "block_order": [
+          "1618247362f965c428-0"
+        ],
+        "settings": {
+          "section_height": "550px",
+          "mobile_height": "auto",
+          "parallax": false,
+          "style": "bars",
+          "autoplay": true,
+          "autoplay_speed": 5
+        }
+      },
+      "1618298158a30ae3e7": {
+        "type": "the-ideeal-sunday-blog-posts",
+        "settings": {
+          "title": "The Eco Journal",
+          "blog": "eco-journal",
+          "post_limit": 3,
+          "blog_show_tags": false,
+          "blog_show_date": true,
+          "blog_show_comments": false,
+          "blog_show_author": false,
+          "blog_show_excerpt": true,
+          "view_all": true,
+          "blog_image_size": "wide",
+          "divider": false
+        }
+      },
+      "page-sections-our-story-template": {
+        "type": "page-sections-our-story-template",
+        "blocks": {
+          "cca1d7ae-0eee-4d9b-9309-c3a02fa14abf": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Our story",
+              "title": "The Ideal Sunday is here to bring you the best range of sustainable products whilst planting a forest along the way.",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "41bf2adf-325a-4e9a-b9ff-d5221377ce66": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Mission_15113f5c-37e2-485a-b325-9a647bad10a3.png",
+              "image_width": 40,
+              "image_position": -60,
+              "subtitle": "Our Mission",
+              "title": "To inspire sustainable living through little changes. It's good for you and it's good for the planet.",
+              "text": "<p>We’ll achieve our mission by making sustainable living fun and accessible to everyone.<\/p><p>No one can be can be sustainable over night. This is a journey we’re taking together, and we&#x27;re here to help you every step of the way. The Ideal Sunday is a place to learn, share and shop responsibly, with the confidence that we’re all playing a part in a greener future.<\/p>",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "right",
+              "background_color": "#ecffe8",
+              "image_background_color": "#dcf7d1"
+            }
+          },
+          "f1010bf8-862f-4360-91b2-55952e26b204": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Our_Story.png",
+              "image_width": 90,
+              "image_position": 0,
+              "subtitle": "Our Story",
+              "title": "It all started with a walk in the woods.",
+              "text": "<p>The Ideal Sunday started with a walk in the woods with a couple of friends on a sunny December afternoon. Inspired by the environment around us, and my new reusable coffee cup, I decided to start a company that helped connect regular people like us with awesome eco-friendly products. <\/p><p>The thought was simple - with small changes, we could change the world, without changing too much about our lives. A couple of months later - and just a few weeks before we catapulted into a global pandemic - I’d left my job (oops!), built our website (wahoo!) and filled my little flat with the beginnings of our small but perfectly formed product line.<\/p><p>We’re called The Ideal Sunday in honour of that afternoon.  It’s stuck around because we like it, and because it means something different to everyone. My ideal Sunday is about exercise, some delicious food, a walk in the woods. Yours could be a game of footy, a hungover breakfast, or an unprecedented lie-in without your kids! <\/p><p>Whatever it is, we want to help you enjoy it even more, by adding that feel-good factor of knowing you’re taking a step towards a greener future. So go ahead and check out our blog and products, and hopefully you’ll pick up some new ideas. We’re a place to learn, share and shop responsibly. You don’t have to change what you love, but maybe you can make it better 💚<\/p><p>Will - Founder of The Ideal Sunday<\/p>",
+              "button_label_1": "Shop Now",
+              "button_link_1": "shopify:\/\/collections\/all",
+              "button_label_2": "Read The Blog",
+              "button_link_2": "shopify:\/\/blogs\/eco-journal",
+              "layout": "left",
+              "background_color": "#ecf7fc",
+              "image_background_color": "#def5ff"
+            }
+          },
+          "b7a32daf-15d5-4b49-bd71-a5d711c959eb": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "We're growing a forest!",
+              "text": "<p>We&#x27;ve teamed up with Ecologi and The Eden Reforestation Project to plant a tree for every order.<\/p>",
+              "button_label": "Learn More",
+              "button_link": "shopify:\/\/pages\/tree-planting",
+              "image": "shopify:\/\/shop_images\/Ecologi_Banner.png",
+              "alignment": "80% 50%",
+              "color_border": "#134784",
+              "layout": "left",
+              "height": 450,
+              "parallax": false
+            }
+          }
+        },
+        "block_order": [
+          "cca1d7ae-0eee-4d9b-9309-c3a02fa14abf",
+          "41bf2adf-325a-4e9a-b9ff-d5221377ce66",
+          "f1010bf8-862f-4360-91b2-55952e26b204",
+          "b7a32daf-15d5-4b49-bd71-a5d711c959eb"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-our-values-template": {
+        "type": "page-sections-our-values-template",
+        "blocks": {
+          "d7ce8401-ac11-4b1e-8327-bf5f3e80a239": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "OUR VALUES",
+              "title": "We’re guided by 4 core values that shape the decisions we make for a greener future.",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "99568455-2885-4da0-aa4b-c40b2da44c43": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Fun_Welcoming_f98c3582-0121-4d5a-aa2a-ad0805cb7a92.png",
+              "image_width": 60,
+              "image_position": -70,
+              "subtitle": "Fun & welcoming",
+              "title": "We won't take ourselves too seriously,",
+              "text": "",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "left",
+              "background_color": "#fff8fa",
+              "image_background_color": "#fff1f5"
+            }
+          },
+          "9fd2ff2f-d2b4-455a-bbc5-3cf1aaad8db4": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Caring.png",
+              "image_width": 50,
+              "image_position": -70,
+              "subtitle": "Sustainable",
+              "title": "but we'll take care of what matters most.",
+              "text": "",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "right",
+              "background_color": "#fffaf4",
+              "image_background_color": "#fff9d8"
+            }
+          },
+          "72c27c2f-c360-4773-887f-fe6c229ed76e": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Community_b4343d99-5f25-4f8b-be19-915ce5023ae0.png",
+              "image_width": 40,
+              "image_position": -70,
+              "subtitle": "Community",
+              "title": "Because we're all in this together",
+              "text": "",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "left",
+              "background_color": "#e8f7e5",
+              "image_background_color": "#dcf7d1"
+            }
+          },
+          "26fa524c-558f-4c77-b845-51a958337a90": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Flexible.png",
+              "image_width": 50,
+              "image_position": 0,
+              "subtitle": "Awesome Service",
+              "title": "... and we’ll bend over backwards to help.",
+              "text": "",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "right",
+              "background_color": "#ecf7fc",
+              "image_background_color": "#def5ff"
+            }
+          },
+          "8451a493-8bf6-459b-acc3-e59bcfc3278a": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "We're growing a forest!",
+              "text": "<p>We&#x27;ve teamed up with Ecologi and The Eden Reforestation Project to plant a tree for every order.<\/p>",
+              "button_label": "Learn More",
+              "button_link": "shopify:\/\/pages\/tree-planting",
+              "image": "shopify:\/\/shop_images\/Ecologi_Banner.png",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 450,
+              "parallax": false
+            }
+          }
+        },
+        "block_order": [
+          "d7ce8401-ac11-4b1e-8327-bf5f3e80a239",
+          "99568455-2885-4da0-aa4b-c40b2da44c43",
+          "9fd2ff2f-d2b4-455a-bbc5-3cf1aaad8db4",
+          "72c27c2f-c360-4773-887f-fe6c229ed76e",
+          "26fa524c-558f-4c77-b845-51a958337a90",
+          "8451a493-8bf6-459b-acc3-e59bcfc3278a"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-tree-planting-template": {
+        "type": "page-sections-tree-planting-template",
+        "blocks": {
+          "53ef0c0a-e348-44e0-8b34-529cc8019fd5": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Tree Planting",
+              "title": "It started with a walk in the woods and together we'll grow a forest.",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "f1152220-10a8-4ac4-8b0b-d575c61926e0": {
+            "type": "text-and-full-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecologi_-_Tree_Planting_7b5d5bf5-048d-4edc-b266-e1d9d9f26a97.png",
+              "image_width": 500,
+              "subtitle": "We plant a tree",
+              "title": "For every order.",
+              "text": "<p>We&#x27;ve teamed up with Ecologi and the Eden Reforestation Project to plant a tree where they are needed most for every order.<\/p>",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "left",
+              "background_color": "#ecf7fc"
+            }
+          },
+          "995fbf02-4ee8-4d5e-bbf0-53534ccec8a2": {
+            "type": "text-and-floating-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/The_Ideal_Sunday_Eco_Friendly_Tree_Planting.png",
+              "image_width": 60,
+              "image_position": -70,
+              "subtitle": "and now",
+              "title": "You can plant trees too.",
+              "text": "<p>We&#x27;ve made it easy for you to contribute to our pledge by planting trees too. All you have to do is add the Plant Extra Trees product at checkout and we&#x27;ll count them up at the end of every month and add them to our digital forest! <\/p>",
+              "button_label_1": "Optional button",
+              "button_label_2": "Optional button",
+              "layout": "right",
+              "background_color": "#e8f7e5",
+              "image_background_color": "#daf2d0"
+            }
+          }
+        },
+        "block_order": [
+          "53ef0c0a-e348-44e0-8b34-529cc8019fd5",
+          "f1152220-10a8-4ac4-8b0b-d575c61926e0",
+          "995fbf02-4ee8-4d5e-bbf0-53534ccec8a2"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-delivery-returns-template": {
+        "type": "page-sections-delivery-returns-template",
+        "blocks": {
+          "20adceef-f3d7-4a4a-80c1-0dc14f0bf6d5": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Delivery & Returns",
+              "title": "Express, plastic free delivery on all orders",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "8482e10c-11f2-40f3-a932-582efb9fdfcf": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": false,
+              "space_around": true,
+              "code": "<div class=\"index-section\">\n  <h2>Delivery<\/h2>\n  <p><strong>UK DELIVERY<\/strong><\/p>\n  <p><b>Free UK 1st Class Delivery for orders over £40.<\/b><\/p>\n  <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Royal Mail 1st Class (Usually Next Day)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£2.95<\/td>\n    <\/tr>\n    <\/tbody> \n  <\/table><\/div>\n  <p><strong>INTERNATIONAL DELIVERY<\/strong><\/p>\n    <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Europe - Tracked (5-7 Working Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£10.00<\/td>\n    <\/tr>\n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Rest of the World - Tracked (7-10 Working Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£15.00<\/td>\n    <\/tr>\n    <\/tbody>\n  <\/table><\/div>\n\n<div class=\"delivery-notes text-block\">\n  <p>Delivery times are from time of dispatch.<\/p>\n  <p>Orders outside of the EU may be subject to customs charges and tax duty which you will need to pay before the order is delivered.<\/p>\n  <span><b>Customs Delays<\/b><\/span>\n  <p>Due to COVID-19 custom delivery officers worldwide are experiencing serious delays processing custom clearance.<\/p>\n<\/div>\n\n<div class=\"index-section\">\n  <h2>Returns<\/h2>\n  <p>\n    If you aren't 100% satisfied with your order you may return it to us as long\n    as it's unused and in it's original packaging. Please notify us within 14\n    days from date of dispatch by emailing\n    <a href=\"mailto:support@theidealsunday.com\">support@theidealsunday.com<\/a>\n    so we can organise the return.\n  <\/p>\n  <p>\n    Once your order has been returned and checked we will issue a refund\n    (excluding the delivery costs).\n  <\/p>\n  <p>\n    Unless your item is faulty you will be\n    responsible for paying the return delivery cost. We suggest you send\n    your returns via a tracked service as we cannot take any responsibility for\n    lost items.\n  <\/p>\n<p><b>Due to the nature of our products there are many that we are unable to accept back due to hygiene reasons, so please contact us before you send products back to us.<\/b><\/p>\n<\/div>\n<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "20adceef-f3d7-4a4a-80c1-0dc14f0bf6d5",
+          "8482e10c-11f2-40f3-a932-582efb9fdfcf"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "1618330432a371b93b": {
+        "type": "promo-grid",
+        "blocks": {
+          "50664b02-3387-49a8-8d24-4cf6322524fb": {
+            "type": "banner",
+            "settings": {
+              "heading": "Start your eco journey today",
+              "text": "",
+              "link": "shopify:\/\/collections\/all",
+              "label": "Shop All products",
+              "color_tint": "#fd4b7f",
+              "color_tint_opacity": 8,
+              "framed": false
+            }
+          }
+        },
+        "block_order": [
+          "50664b02-3387-49a8-8d24-4cf6322524fb"
+        ],
+        "settings": {
+          "full_width": false,
+          "gutter_size": 10,
+          "space_above": true,
+          "space_below": false
+        }
+      },
+      "1618434431426f981f": {
+        "type": "background-image-text",
+        "settings": {
+          "subtitle": "",
+          "title": "We're growing a forest!",
+          "text": "<p>We&#x27;ve teamed up with Ecologi and The Eden Reforestation Project to plant a tree for every order.<\/p>",
+          "button_label": "Learn More",
+          "button_link": "shopify:\/\/pages\/tree-planting",
+          "image": "shopify:\/\/shop_images\/Ecologi_Banner.png",
+          "focal_point": "80% 50%",
+          "layout": "left",
+          "height": 450,
+          "framed": false,
+          "parallax": false
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "e1b844be-0f83-402d-bce5-acd73e089e0b": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Contact Us",
+              "title": "We'd love to hear from you!",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "page-contact-template-0": {
+            "type": "contact-form",
+            "settings": {
+              "title": "",
+              "show_phone": false,
+              "narrow_column": true
+            }
+          }
+        },
+        "block_order": [
+          "e1b844be-0f83-402d-bce5-acd73e089e0b",
+          "page-contact-template-0"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false,
+          "overlaid_header": true
+        }
+      },
+      "161934060891de6c34": {
+        "type": "featured-collections",
+        "blocks": {
+          "161934060891de6c34-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "bathroom",
+              "title": "",
+              "focal_point": "center center"
+            }
+          },
+          "161934060891de6c34-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "kitchen",
+              "title": "",
+              "focal_point": "center center"
+            }
+          },
+          "161934060891de6c34-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "cleaning-laundry",
+              "title": "",
+              "focal_point": "center center"
+            }
+          },
+          "e52f2b23-87e3-40fc-a39f-6d9c7c7aa298": {
+            "type": "collection",
+            "settings": {
+              "collection": "haircare",
+              "title": "",
+              "focal_point": "center center"
+            }
+          },
+          "d2077beb-0054-4146-bf19-b8bc9454a87f": {
+            "type": "collection",
+            "settings": {
+              "collection": "skincare",
+              "title": "",
+              "focal_point": "center center"
+            }
+          },
+          "93143d4c-bbf2-4df4-8a7f-cca725013412": {
+            "type": "collection",
+            "settings": {
+              "collection": "on-the-go",
+              "title": "",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "161934060891de6c34-0",
+          "161934060891de6c34-2",
+          "161934060891de6c34-1",
+          "e52f2b23-87e3-40fc-a39f-6d9c7c7aa298",
+          "d2077beb-0054-4146-bf19-b8bc9454a87f",
+          "93143d4c-bbf2-4df4-8a7f-cca725013412"
+        ],
+        "settings": {
+          "title": "Shop by Range",
+          "divider": false,
+          "per_row": 3,
+          "enable_gutter": true
+        }
       }
     },
     "content_for_index": [
-      "161374071425f58df7",
+      "1618247362f965c428",
       "161824111578f03b50",
+      "1618330432a371b93b",
       "161217598435fed442",
+      "161934060891de6c34",
       "16182285837ec47354",
-      "16168747060c4379dc",
       "16105319015c9df4d0",
-      "1618082935e0f46fa8",
       "1525295772132",
-      "1525115199973"
+      "1618082935e0f46fa8",
+      "1618298158a30ae3e7",
+      "1618434431426f981f"
     ]
   },
   "presets": {
@@ -1780,7 +2131,7 @@
       "checkout_logo_size": "medium",
       "checkout_body_background_color": "#ffffff",
       "checkout_input_background_color_mode": "white",
-      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_sidebar_background_color": "#e3eaee",
       "checkout_accent_color": "#682d2d",
       "checkout_button_color": "#682d2d",
       "checkout_error_color": "#ff6d6d",
@@ -2838,7 +3189,7 @@
       "type_base_font_family": "itc_conduit_n4",
       "type_base_spacing": "50",
       "type_base_size": 18,
-      "type_base_line_height": 1.4,
+      "type_base_line_height": 1.5,
       "type_body_align_text": true,
       "type_navigation_style": "heading",
       "type_navigation_size": 18,

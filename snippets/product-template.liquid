@@ -100,11 +100,11 @@
             {%- endif -%}
 
             {%- if isModal -%}
-              <p class="h2 product-single__title">
+              <p class="h3 product-single__title">
                 {{ product.title }}
               </p>
             {%- else -%}
-              <h1 class="h2 product-single__title">
+              <h1 class="h3 product-single__title">
                 {{ product.title }}
               </h1>
             {%- endif -%}
@@ -243,6 +243,8 @@
 
             <div class="product-short-description">{{ description_base }}</div>
 
+            <hr class="hr--medium">
+
             {%- unless isModal -%}
               {% comment %}
                 Shopify's product form attaches a number of tracking
@@ -254,9 +256,9 @@
                 product: product,
                 current_variant: current_variant
               -%}
-              <hr class="hr--medium">
               {%- render 'the-ideal-sunday-delivery-rewards', current_variant: current_variant -%}
-              {%- render 'the-ideal-sunday-bundle-save' -%}
+              
+              <!-- {%- render 'the-ideal-sunday-bundle-save' -%} -->
             {%- else -%}
               <div
                 id="ProductFormHolder-{{ section_id }}"
@@ -299,8 +301,9 @@
             {%- endif -%}
 
             {%- unless description_style == 'full' -%}
+            <!-- {%- render 'the-ideal-sunday-product-values' -%} -->
               <div class="product-single__description rte" data-station-tabs-app>
-                {{ product.description }}
+                {{ description_tabs }}
               </div>
 
               {%- render 'product-additional-content', product: product, section_id: section_id -%}
@@ -336,7 +339,7 @@
         <div class="page-width product-values-description-wrapper">
             {%- render 'the-ideal-sunday-product-values' -%}
           <div class="product-single__description-full rte" data-station-tabs-app>
-            {{ product.description }}
+            {{ description_tabs }}
           </div>
         </div>
       </div>

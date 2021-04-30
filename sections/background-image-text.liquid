@@ -29,11 +29,11 @@
           data-widths="[720, 900, 1080, 1800, 2400]"
           data-sizes="auto"
           alt="{{ section.settings.image.alt | escape }}"
-          style="object-position: {{ section.settings.focal_point }}">
+          style="object-position: {{ section.settings.focal_point }};height: 100%;object-fit: cover;">
         <noscript>
           <img
             class="image-fit background-media-text__image background-media-text__image--{{ section.id }} lazyloaded"
-            src="{{ section.settings.image | img_url: '1800x' }}"
+            src="{{ section.settings.image | img_url: '1800x' }};"
             alt="{{ section.settings.image.alt }}">
         </noscript>
       {%- else -%}

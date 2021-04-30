@@ -1,10 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
 <head>
+{% include 'pro-blogger-section-wrapper' %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_button }}">
+  <meta name="facebook-domain-verification" content="b0df6e0ch6i9fv87ewlk910udwbsex" />
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
@@ -100,9 +102,12 @@
 
     {%- section 'header' -%}
 
-      <main class="main-content" id="MainContent">
-        {{ content_for_layout }}
-      </main>
+    
+
+    <main class="main-content" id="MainContent">
+      {{ content_for_layout }}
+      {% capture stn_app %}{% include 'station-tabs' %}{% endcapture %}{% if stn_app contains 'Station.Apps' %}{{ stn_app }}{% endif %}
+    </main>
 
       {%- section 'footer-promotions' -%}
       {%- section 'the-ideal-sunday-company-values-footer' -%}
@@ -133,5 +138,6 @@
   {% render 'flits_snippet' %}
   {% render 'smile-initializer' %}
   {% include 'estimated-delivery-days'%}
+  <script type='text/javascript' async src='https://spcdn.incartupsell.com/idhch-5hfuy57MSp6zjUmpyF7y.js'></script>
 </body>
 </html>

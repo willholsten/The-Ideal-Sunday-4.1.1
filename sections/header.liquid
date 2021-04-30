@@ -84,6 +84,10 @@
   {%- if overlay_header or section.settings.announcement_above_header -%}
     {%- render 'announcement-bar', section: section -%}
   {%- endif -%}
+  {%- unless overlay_header or section.settings.announcement_above_header -%}
+    {%- render 'the-ideal-sunday-reviews-header' -%}
+  {%- endunless -%}
+  
 
   {%- unless overlay_header -%}
     {%- if section.settings.show_locale_selector or section.settings.show_currency_selector or section.settings.toolbar_social or section.settings.toolbar_menu != blank -%}
@@ -228,7 +232,9 @@
   {%- unless overlay_header or section.settings.announcement_above_header -%}
     {%- render 'announcement-bar', section: section -%}
   {%- endunless -%}
-  {%- render 'the-ideal-sunday-reviews-header' -%}
+  {%- if overlay_header or section.settings.announcement_above_header -%}
+    {%- render 'the-ideal-sunday-reviews-header' -%}
+  {%- endif -%}
 </div>
 
 {% schema %}

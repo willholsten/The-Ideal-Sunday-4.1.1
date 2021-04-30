@@ -17,7 +17,7 @@
         {%- endif -%}
       </h1>
 
-      {%- if section.settings.blog_show_tag_filter and blog.tags.size > 0 -%}
+      <!-- {%- if section.settings.blog_show_tag_filter and blog.tags.size > 0 -%}
         <select id="BlogTagFilter">
           <option value="/blogs/{{ blog.handle }}">All</option>
           {%- for tag in blog.all_tags -%}
@@ -25,6 +25,17 @@
             <option value="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
           {%- endfor -%}
         </select>
+      {%- endif -%} -->
+
+      {%- if section.settings.blog_show_tag_filter and blog.tags.size > 0-%}
+        <ul id="BlogTagFilter" class="blog-tags">
+          {% assign blogTags = "brand-focus,eco-friendly tips,news,seasonal" | split: ',' %}
+          <li class="h4" value="/blogs/{{ blog.handle }}"><a href="/blogs/{{ blog.handle }}">All</a></li>
+          {%- for tag in blogTags -%}
+            {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+            <li class="h4 {% if current_tags contains tag %}is-active{% endif %}"><a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</a></li>
+          {%- endfor -%}
+        </ul>
       {%- endif -%}
     </header>
 

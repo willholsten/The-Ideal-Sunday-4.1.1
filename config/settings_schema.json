@@ -1264,5 +1264,85 @@
         "label": "Disable zoom animations"
       }
     ]
+  },
+  {
+    "name": "App: Flits",
+    "icon": "color",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Order tracking colors"
+      },
+      {
+        "type": "color",
+        "id": "flits_tracking_active_color",
+        "label": "Processing Status",
+        "default": "#1201FE"
+      },
+      {
+        "type": "color",
+        "id": "flits_tracking_completed_color",
+        "label": "Completed Status",
+        "default": "#2D8700"
+      },
+      {
+        "type": "color",
+        "id": "flits_tracking_remain_color",
+        "label": "Remaining Status",
+        "default": "#dddddd"
+      },
+      {
+        "type": "color",
+        "id": "flits_outer_circle_background_color",
+        "label": "Outer circle background color",
+        "default": "#ebf0f2"
+      },
+      {
+        "type": "color",
+        "id": "flits_check_mark_color",
+        "label": "Check mark color",
+        "default": "#ebf0f2"
+      },
+      {
+        "type": "header",
+        "content": "Button colors"
+      },
+      {
+        "type": "color",
+        "id": "flits_primary_button_color",
+        "label": "Primary button color",
+        "default": "#4C5667"
+      },
+      {
+        "type": "color",
+        "id": "flits_primary_button_background_color",
+        "label": "Primary button background color",
+        "default": "#EBEFF2"
+      },
+      {
+        "type": "color",
+        "id": "flits_default_button_color",
+        "label": "Secondary button color",
+        "default": "#5FBEAA"
+      },
+      {
+        "type": "color",
+        "id": "flits_default_button_background_color",
+        "label": "Secondary button background color",
+        "default": "#EBEFF2"
+      },
+      {
+        "type": "color",
+        "id": "flits_danger_button_color",
+        "label": "Danger button color",
+        "default": "#D9534F"
+      },
+      {
+        "type": "color",
+        "id": "flits_danger_button_background_color",
+        "label": "Danger button background color",
+        "default": "#EBEFF2"
+      }
+    ]
   }
 ]

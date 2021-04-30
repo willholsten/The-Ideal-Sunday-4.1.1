@@ -711,7 +711,8 @@
         "cart": "Bag",
         "back_to_cart": "Back to bag",
         "back_to_shipping_method": "Return to delivery",
-        "choose_shipping_method": "Choose a delivery method"
+        "choose_shipping_method": "Choose a delivery method",
+        "continue_to_shipping_method": "Continue to delivery"
       },
       "contact": {
         "shipping_address_title": "Delivery address"

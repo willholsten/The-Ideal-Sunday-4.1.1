@@ -2,11 +2,11 @@
 
   /* Recoleta Font */
 
-  @font-face {
+  <!-- @font-face {
     font-family: "TheIdealSundayFont";
     src: url('{{ "RecoletaCustom-Regular.woff2" | asset_url }}') format("woff2");,
     url('{{ "RecoletaCustom-Regular.woff" | asset_url }}') format("woff");
-  }
+  } -->
 
   @font-face {
     font-family: "TheIdealSundayFontLight";
@@ -14,9 +14,15 @@
     url('{{ "RecoletaCustom-Light.woff" | asset_url }}') format("woff");    
   }
 
+  @font-face {
+    font-family: "TheIdealSundayFontLogo";
+    src: url('{{ "RecoletaCustom-Regular.woff2" | asset_url }}') format("woff2"),
+    url('{{ "RecoletaCustom-Regular.woff" | asset_url }}') format("woff");    
+  }
+
   :root {
-    --typeHeaderLogo: 'TheIdealSundayFont';
     --typeHeaderPrimary: 'TheIdealSundayFontLight';
+    --typeHeaderLogo: 'TheIdealSundayFontLogo';
     --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
     --typeHeaderSize: {{ settings.type_header_base_size | default: '32' | append: 'px' }};
     --typeHeaderWeight: {{ settings.type_header_font_family.weight }};
