@@ -57,14 +57,14 @@
   34820^^About The Swag^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||The Swag^^^^^^0^^~~
   {%- capture content %}{{ collections['neon-kactus'].description }}{% endcapture -%}
   34093^^About Neon Kactus^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Neon Kactus^^^^^^0^^~~
-  {%- capture content %}{%- render 'the-ideal-sunday-product-values' -%}{% endcapture -%}
-  61638^^Product Values^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^4891709407306^^1^^0^^~~
   {%- capture content %}<p>{{ collections['ocean-bottle'].description }}</p>{% endcapture -%}
   34090^^About Ocean Bottle^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Ocean Bottle^^^^^^0^^~~
   {%- capture content %}<p>{{ collections['zero-waste-club'].description }}</p>{% endcapture -%}
   34092^^About Zero Waste Club^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Zero Waste Club^^^^^^0^^~~
   {%- capture content %}<p>{{ collections['acala'].description }}</p>{% endcapture -%}
   34087^^About Acala^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Acala^^^^^^0^^~~
+  {%- capture content %}{%- render 'the-ideal-sunday-product-values' -%}{% endcapture -%}
+  61638^^Product Values^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^4891709407306^^1^^0^^~~
   {%- capture content %}<p>{{ collections['biork'].description }}</p>{% endcapture -%}
   34085^^About Biork^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Biork^^^^^^0^^~~
   {%- capture content %}{{ collections['eco-living'].description }}{% endcapture -%}
@@ -75,13 +75,19 @@
   37489^^About OceanSaver^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||OceanSaver^^^^^^0^^~~
   {%- capture content %}{{ collections['upcircle'].description }}{% endcapture -%}
   42307^^About UpCircle^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||UpCircle^^^^^^0^^~~
-  {%- capture content %}<p><em>Order before 2pm for same day dispatch.</em></p>
-<p><strong>Free Express UK Delivery on orders over &pound;40!</strong></p>
+  {%- capture content %}<p>{{ collections['safix'].description }}</p>{% endcapture -%}
+  59659^^About Safix^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^|260584013898|||^^^^^^0^^~~
+  {%- capture content %}<p><em>Order before 12pm for same day dispatch.</em></p>
+<p><strong>Free 48 Hour UK Delivery on orders over &pound;40!</strong></p>
 <table style="width: 100%; margin-bottom: 20px;" border="1">
 <tbody>
 <tr>
-<td style="width: 78.61060329067642%;">UK - Express (Usually Next Day)</td>
-<td style="width: 17.915904936014627%; text-align: right;">&pound;2.95</td>
+<td style="width: 78.61060329067642%;">UK - Royal Mail 48 Hour</td>
+<td style="width: 17.915904936014627%; text-align: right;">&pound;3.49</td>
+</tr>
+<tr>
+<td style="width: 78.61060329067642%;">UK - Royal Mail 24 Hour</td>
+<td style="width: 17.915904936014627%; text-align: right;">&pound;4.75</td>
 </tr>
 <tr>
 <td style="width: 78.61060329067642%;">Europe - Tracked (5-7 Working Days)</td>
@@ -93,11 +99,10 @@
 </tr>
 </tbody>
 </table>
+<p>All delivery times are from time of dispatch.</p>
 <p>We offer a full refund on items returned within 14 days of purchase. You will be responsible for delivery charges unless the items are damaged or incorrect.</p>
 <p>Head to&nbsp;<a title="The Ideal Sunday Delivery &amp; Returns" href="https://theidealsunday.com/pages/delivery-returns">Delivery &amp; Returns</a>&nbsp;for more information.</p>{% endcapture -%}
   35466^^Delivery & Returns^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^0||||^^4535484579914,4586601906250^^^^0^^~~
-  {%- capture content %}<p>{{ collections['safix'].description }}</p>{% endcapture -%}
-  59659^^About Safix^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^|260584013898|||^^^^^^0^^~~
 {%- endcapture -%}
 {%- assign tabs_array = tabs | strip | split: '~~' -%}
 {%- assign p_id_str = product.id | downcase -%}

@@ -153,12 +153,15 @@
               <span id="PriceA11y-{{ section_id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
             {%- endif -%}
 
-            <span id="ProductPrice-{{ section_id }}"
-              class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
-              {{ current_variant.price | money }}
-            </span>
+            <div class="price-stars-wrapper">
+              <span id="ProductPrice-{{ section_id }}"
+                class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                {{ current_variant.price | money }}
+              </span>
 
-            {%- render 'the-ideal-sunday-product-review-stars' -%}
+              {%- render 'the-ideal-sunday-product-review-stars' -%}
+            </div>
+
 
             {%- if settings.product_save_amount -%}
               {%- if settings.product_save_type == 'dollar' -%}
@@ -300,8 +303,10 @@
               </div>
             {%- endif -%}
 
-            {%- unless description_style == 'full' -%}
             <!-- {%- render 'the-ideal-sunday-product-values' -%} -->
+
+            {%- unless description_style == 'full' -%}
+              
               <div class="product-single__description rte" data-station-tabs-app>
                 {{ description_tabs }}
               </div>

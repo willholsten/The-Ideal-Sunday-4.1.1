@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
 <head>
+<!-- Added by AVADA SEO Suite -->
+{% include 'avada-seo' %}
+<!-- /Added by AVADA SEO Suite -->
+
 {% include 'pro-blogger-section-wrapper' %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -75,7 +79,7 @@
     };
   </script>
 
-  {{ content_for_header }}
+{{ content_for_header }}
 
   <script src="{{ 'vendor-scripts-v9.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 
@@ -84,7 +88,7 @@
     <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url | split: '?' | first }}">
   {%- endif -%}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer="defer"></script>
   <script src="{{ 'the-ideal-sunday.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script>
 
@@ -137,7 +141,6 @@
   {%- render 'the-ideal-sunday-bundle-save-modal' -%}
   {% render 'flits_snippet' %}
   {% render 'smile-initializer' %}
-  {% include 'estimated-delivery-days'%}
   <script type='text/javascript' async src='https://spcdn.incartupsell.com/idhch-5hfuy57MSp6zjUmpyF7y.js'></script>
 </body>
 </html>

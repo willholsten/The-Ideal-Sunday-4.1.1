@@ -20,6 +20,22 @@
     url('{{ "RecoletaCustom-Regular.woff" | asset_url }}') format("woff");    
   }
 
+  @font-face {
+    font-family: "FSMeridian";
+    src: url('{{ "FS-Meridian.otf" | asset_url }}') format("opentype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "FSMeridian";
+    src: url('{{ "FS-Meridian-Medium.otf" | asset_url }}') format("opentype");
+    font-style: normal;
+    font-weight: 500;
+  }
+
+
+
   :root {
     --typeHeaderPrimary: 'TheIdealSundayFontLight';
     --typeHeaderLogo: 'TheIdealSundayFontLogo';
@@ -29,10 +45,10 @@
     --typeHeaderLineHeight: {{ settings.type_header_line_height | default: 1.4 }};
     --typeHeaderSpacing: {{ settings.type_header_spacing | default: '25' | divided_by: 1000.00 | append: 'em' }};
 
-    --typeBasePrimary:{{ settings.type_base_font_family.family }};
+    --typeBasePrimary:'FSMeridian';
     --typeBaseFallback:{{ settings.type_base_font_family.fallback_families }};
     --typeBaseSize: {{ settings.type_base_size | default: 16 | append: 'px' }};
-    --typeBaseWeight: {{ settings.type_base_font_family.weight }};
+    --typeBaseWeight: normal;
     --typeBaseSpacing: {{ settings.type_base_spacing | default: '50' | divided_by: 1000.00 | append: 'em' }};
     --typeBaseLineHeight: {{ settings.type_base_line_height | default: 1.4 }};
 
