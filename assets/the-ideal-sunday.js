@@ -13,6 +13,54 @@ document.addEventListener('page:loaded', function () {
     $('.collection-description-closed').toggleClass('open');
   });
 
+  $('.site-header__search-container').click(function () {
+    $(this).addClass('is-active');
+    $('#PredictiveWrapper').show();
+  });
+
+  // $('#SearchClose').click(function () {
+  //   $('.site-header__search-container').removeClass('is-active');
+  //   $('#PredictiveWrapper').hide();
+  // });
+
+  $('.desktop-menu-icon').click(function () {
+    $(this).toggleClass('is-active');
+    $('#nav-icon3').toggleClass('open');
+    $('.header-item--navigation').toggleClass('is-active');
+  });
+
+  $('.search-icon').click(function () {
+    $('.header-item--search-bar').toggleClass('is-active');
+  });
+
+  $('#st-description_0-0').append("<span class='product-read-more yellow-strike'>Read More</span>");
+
+  $('.product-read-more').click(function () {
+    $(this).text(function (i, text) {
+      return text === 'Read More' ? 'Read Less' : 'Read More';
+    });
+    $('#st-description_0-0').toggleClass('open');
+  });
+
+  var mouse_is_inside = false;
+
+$(document).ready(function()
+{
+    $('#PredictiveWrapper').hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    $("body").mouseup(function(){ 
+        if(! mouse_is_inside) $('#PredictiveWrapper').hide();
+    });
+});
+
+  
+
+  
+
   // Show / Hide Delivery & Rewards on Variant Change if Available
   document.addEventListener('variant:change', function (evt) {
     var variant = evt.detail.variant;
@@ -39,32 +87,34 @@ document.addEventListener('page:loaded', function () {
   });
 
   // Bundle & Save Modal
-  $('#shopify-section-collection-promotions').addClass('js-modal-open-bundle-save');
-  $('.announcement-slider__slide[data-index=2]').addClass('js-modal-open-bundle-save');
+  // $('#shopify-section-collection-promotions').addClass('js-modal-open-bundle-save');
+  // $('.announcement-slider__slide[data-index=2]').addClass('js-modal-open-bundle-save');
 
-  $('.js-modal-open-bundle-save').click(function () {
-    $('body').addClass('modal-open');
-    $('#BundleSaveModal').addClass('modal--is-active');
-  });
+  // $('.js-modal-open-bundle-save').click(function () {
+  //   $('body').addClass('modal-open');
+  //   $('#BundleSaveModal').addClass('modal--is-active');
+  // });
 
-  $('.js-modal-close').click(function () {
-    $('body').removeClass('modal-open');
-    $('#BundleSaveModal').removeClass('modal--is-active');
-  });
+  // $('.js-modal-close').click(function () {
+  //   $('body').removeClass('modal-open');
+  //   $('#BundleSaveModal').removeClass('modal--is-active');
+  // });
 
   // Header Reviews Reviews.io API
-  $.ajax({
-    method: 'GET',
-    url: 'https://api.reviews.co.uk/merchant/reviews?store=the-ideal-sunday',
-  }).done(function (data) {
-    var data = data;
-    $('.header-review-word').append('Rated <b>' + data.word + '</b>');
-    $('.header-product-review-stars').append('&nbsp;<i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i>');
-    $('.header-reviews-total').append('from ' + data.stats.total_reviews + ' reviews');
-    $('.header-reviews-average-rating').append('&nbsp;<b>' + data.stats.average_rating + '/5</b>');
-    // $('.header-reviews-on').text('on');
-    $('.header-reviews-image').append('<img src="https://cdn.shopify.com/s/files/1/0283/1466/5034/t/27/assets/reviewsio-logo.png?v=16353740605423461662" alt="The Ideal Sunday 5 Star Reviews">');
-  });
+  // $.ajax({
+  //   method: 'GET',
+  //   url: 'https://api.reviews.co.uk/merchant/reviews?store=the-ideal-sunday',
+  // }).done(function (data) {
+  //   var data = data;
+  //   $('.header-review-word').append('Rated <b>' + data.word + '</b>');
+  //   $('.header-product-review-stars').append('&nbsp;<i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i><i class="ruk-icon-full-star-01" style="font-family: \'product-widget-iconfont\'"></i>');
+  //   $('.header-reviews-total').append('from ' + data.stats.total_reviews + ' reviews');
+  //   $('.header-reviews-average-rating').append('&nbsp;<b>' + data.stats.average_rating + '/5</b>');
+  //   // $('.header-reviews-on').text('on');
+  //   $('.header-reviews-image').append('<img src="https://cdn.shopify.com/s/files/1/0283/1466/5034/t/27/assets/reviewsio-logo.png?v=16353740605423461662" alt="The Ideal Sunday 5 Star Reviews">');
+  // });
+
+
 
   // Bundle & Save Calculation Message
     // document.addEventListener('cart:updated', function (evt) {
@@ -100,5 +150,12 @@ document.addEventListener('page:loaded', function () {
     //     $('.ajaxcart__price-original .money').addClass('line-through');
     //   }
     // });
+
+  //   $(window).scroll(function() {
+  //     var scrollPos = $(window).scrollTop()
+  //     if ($(this).scrollTop() >= 58 && $(this).scrollTop() <= 200) {
+  //       $('#HeaderWrapper').css('padding-bottom', scrollPos);
+  //     }
+  // });
 });
 

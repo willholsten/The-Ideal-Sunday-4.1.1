@@ -66,6 +66,11 @@
                   {{ block.settings.button_label }}
                 </a>
               {%- endif -%}
+              {%- if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank -%}
+                <a href="{{ block.settings.button_link_2 }}" class="btn">
+                  {{ block.settings.button_label_2 }}
+                </a>
+              {%- endif -%}
             </div>
           </div>
         </div>

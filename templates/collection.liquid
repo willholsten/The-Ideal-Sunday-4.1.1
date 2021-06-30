@@ -1,6 +1,13 @@
 {% section 'collection-header' %}
 
 <div id="CollectionAjaxResult" class="collection-content">
+
+  <div class="subcollections-wrapper">
+    <div class="page-width">
+      {%- render 'subcollections', per_row: 3 -%}
+    </div>
+  </div>
+
   <div id="CollectionAjaxContent">
     <div class="page-width">
       <div class="grid">

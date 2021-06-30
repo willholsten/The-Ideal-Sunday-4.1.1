@@ -109,7 +109,7 @@
   .flits-wishlist-collection-page .flits-remove-from-wsl-btn,
   .flits-wishlist-product-page .flits-add-to-wsl-btn,
   .flits-wishlist-product-page .flits-remove-from-wsl-btn {
-    height: 24px;
+    height: 30px;
   }
 
   button.flits-add-to-wsl-btn,
@@ -121,8 +121,8 @@
 
   .flits-add-to-wsl-btn svg,
   .flits-remove-from-wsl-btn svg {
-    width: 20px;
-    width: 20px;
+    width: 30px;
+    width: 30px;
   }
 
   .flits-add-to-wsl-btn svg {
@@ -241,10 +241,13 @@
                      color: {{ before_text_clr }};
                      {{add_btn_show}};"
               title="{{ 'flits.wishlisted_product_page.add_to_wishlist_btn_title' | t }}">
-<!--         <svg style="fill: {{ before_heart_clr }};" class="flits-wsl-heart-empty" viewBox="0 0 32 29.6">
-          <path d="{{svg_path}}"></path>
-        </svg> -->
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{before_heart_clr}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+         <svg width="30" height="30" viewBox="0 0 100 100">
+          <g id="heart" transform="translate(10 -18.514)">
+            <g id="Group_6132" data-name="Group 6132" transform="translate(0 35.514)">
+              <path id="Path_54877" data-name="Path 54877" d="M57.49,35.516h0A22.549,22.549,0,0,0,40.121,43.54a22.244,22.244,0,0,0-17.369-8.024A22.752,22.752,0,0,0,0,58.268C0,79.8,37.582,100.827,39.106,101.639a1.828,1.828,0,0,0,2.031,0c1.524-.813,39.106-21.533,39.106-43.372A22.752,22.752,0,0,0,57.49,35.516ZM40.121,97.577C34.23,94.123,4.063,75.738,4.063,58.268A18.69,18.69,0,0,1,22.752,39.578a18.283,18.283,0,0,1,15.642,8.43,2.133,2.133,0,0,0,3.453,0A18.689,18.689,0,0,1,76.18,58.268C76.18,75.941,46.012,94.225,40.121,97.577Z" transform="translate(0 -35.514)" fill="#1E1E95" stroke="#1E1E95" stroke-width="0.8"/>
+            </g>
+          </g>
+      </svg>
         {% comment %} {{before_text_span}} {% endcomment %}
       </button>
       <button type="button" class="flits-wsl-btn flits-wsl-btn-heart-span flits-remove-from-wsl-btn"
@@ -254,10 +257,15 @@
                      color: {{ after_text_clr }};
                      {{remove_btn_show}};"
               title="{{ 'flits.wishlisted_product_page.remove_from_wishlist_btn_title' | t }}">
-<!--         <svg style="fill: {{after_heart_clr}};" class="flits-wsl-heart-filled" viewBox="0 0 32 29.6">
-          <path d="{{svg_path}}"></path>
-        </svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="{{after_heart_clr}}" stroke="{{after_heart_clr}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              <svg width="30" height="30" viewBox="0 0 100 100">
+                <g id="tis-icon-heart-full" clip-path="url(#clip-tis-icon-heart-full)">
+                  <g id="heart" transform="translate(10 -18.514)">
+                    <g id="Group_6132" data-name="Group 6132" transform="translate(0 35.514)">
+                      <path id="Path_54877" data-name="Path 54877" d="M57.49,35.516h0A22.549,22.549,0,0,0,40.121,43.54a22.244,22.244,0,0,0-17.369-8.024A22.752,22.752,0,0,0,0,58.268C0,79.8,37.582,100.827,39.106,101.639a1.828,1.828,0,0,0,2.031,0c1.524-.813,39.106-21.533,39.106-43.372A22.752,22.752,0,0,0,57.49,35.516Z" transform="translate(0 -35.514)" fill="#1f1f83" stroke="#1f1f83" stroke-width="0.8"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
         {% comment %} {{after_text_span}} {% endcomment %}
       </button>
     </div>
@@ -279,19 +287,27 @@
               {{data_attribute}} {{collection_page}}
               style="{{add_btn_show}}; border:0; background-color: transparent;"
               title="{{ 'flits.wishlisted_product_page.add_to_wishlist_btn_title' | t }}">
-<!--         <svg style="fill: {{default_before_heart_clr}};" class="flits-wsl-heart-empty" viewBox="0 0 32 29.6">
-          <path d="{{svg_path}}"></path>
-        </svg> -->
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{default_after_heart_clr}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+         <svg width="30" height="30" viewBox="0 0 100 100">
+          <g id="heart" transform="translate(10 -18.514)">
+            <g id="Group_6132" data-name="Group 6132" transform="translate(0 35.514)">
+              <path id="Path_54877" data-name="Path 54877" d="M57.49,35.516h0A22.549,22.549,0,0,0,40.121,43.54a22.244,22.244,0,0,0-17.369-8.024A22.752,22.752,0,0,0,0,58.268C0,79.8,37.582,100.827,39.106,101.639a1.828,1.828,0,0,0,2.031,0c1.524-.813,39.106-21.533,39.106-43.372A22.752,22.752,0,0,0,57.49,35.516ZM40.121,97.577C34.23,94.123,4.063,75.738,4.063,58.268A18.69,18.69,0,0,1,22.752,39.578a18.283,18.283,0,0,1,15.642,8.43,2.133,2.133,0,0,0,3.453,0A18.689,18.689,0,0,1,76.18,58.268C76.18,75.941,46.012,94.225,40.121,97.577Z" transform="translate(0 -35.514)" fill="#1E1E95" stroke="#1E1E95" stroke-width="0.8"/>
+            </g>
+          </g>
+      </svg>
       </button>
       <button class="flits-remove-from-wsl-btn"
               {{data_attribute}} {{collection_page}}
               style="{{remove_btn_show}}; border:0; background-color: transparent;"
               title="{{ 'flits.wishlisted_product_page.remove_from_wishlist_btn_title' | t }}">
-<!--         <svg style="fill: {{default_after_heart_clr}};" class="flits-wsl-heart-filled" viewBox="0 0 32 29.6">
-          <path d="{{svg_path}}"></path>
-        </svg> -->
-     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="{{default_after_heart_clr}}" stroke="{{default_after_heart_clr}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              <svg width="30" height="30" viewBox="0 0 100 100">
+                <g id="tis-icon-heart-full" clip-path="url(#clip-tis-icon-heart-full)">
+                  <g id="heart" transform="translate(10 -18.514)">
+                    <g id="Group_6132" data-name="Group 6132" transform="translate(0 35.514)">
+                      <path id="Path_54877" data-name="Path 54877" d="M57.49,35.516h0A22.549,22.549,0,0,0,40.121,43.54a22.244,22.244,0,0,0-17.369-8.024A22.752,22.752,0,0,0,0,58.268C0,79.8,37.582,100.827,39.106,101.639a1.828,1.828,0,0,0,2.031,0c1.524-.813,39.106-21.533,39.106-43.372A22.752,22.752,0,0,0,57.49,35.516Z" transform="translate(0 -35.514)" fill="#1f1f83" stroke="#1f1f83" stroke-width="0.8"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
       </button>
     </div>
     <span class="flits-wsl-product-count flits-wsl-coll-page-product-count"

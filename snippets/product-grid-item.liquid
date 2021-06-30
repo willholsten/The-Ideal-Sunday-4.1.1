@@ -1,6 +1,6 @@
 {% assign color_active = false %}
 {% for option in product.options %}
-    {% if option == 'Color' or option == 'Colour' or option == 'Style' or option == 'Purpose' %}
+    {% if option == 'Color' or option == 'Colour' or option == 'Style' or option == 'Purpose' or option == 'Scent' or option == 'Size' %}
         {% assign color_active = true %}
     {% endif %}
 {% endfor %}
@@ -9,7 +9,7 @@
     {% if template contains 'collection' %}
 
         {% for option in product.options %}
-            {% if option == 'Color' or option == 'Colour' or option == 'Style' or option == 'Purpose' %}
+            {% if option == 'Color' or option == 'Colour' or option == 'Style' or option == 'Purpose' or option == 'Scent' or option == 'Size' %}
                 {% assign index = forloop.index0 %}
                 {% assign colorlist = '' %}
                 {% assign color = '' %}
@@ -50,6 +50,9 @@
                         {% unless  variant_sold_out %}
                             <div class="grid__item grid-product {{ grid_item_width }}{% if variant_sold_out %} product-sold-out{% endif %}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}">
                                 <div class="grid-product__content">
+                                    {%- comment -%}
+                                    {% render 'flits_wishlist_snippet' with 'flits_collection_page_wsl_btn' %}
+                                    {%- endcomment -%}
                                     {% if variant_sold_out %}
                                         <div class="grid-product__tag grid-product__tag--sold-out">
                                             {{ 'products.product.sold_out' | t }}
@@ -140,7 +143,9 @@
                                                 {% endif %}
                                                 {% if product.price_varies %}
                                                     {%- assign price = product.price_min | money -%}
-                                                    {{ 'products.general.from_text_html' | t: price: price }}
+                                                    <span class="from-price">
+                                                        {{ variant.price | money }}
+                                                    </span>
                                                 {% else %}
                                                     {{ product.price  | money }}
                                                 {% endif %}
@@ -161,7 +166,9 @@
                                                     {% endif %}
                                                 {% endif %}
 
+                                                {%- comment -%}
                                                 {%- render 'the-ideal-sunday-product-review-stars', sku: variant.sku -%}
+                                                {%- endcomment -%}
 
                                             </div>
                                             {% if settings.enable_product_reviews %}
@@ -251,6 +258,9 @@
 
         <div class="grid__item grid-product {{ grid_item_width }}{% if sold_out %} product-sold-out{% endif %}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}">
             <div class="grid-product__content">
+                {%- comment -%}
+                {% render 'flits_wishlist_snippet' with 'flits_collection_page_wsl_btn' %}
+                {%- endcomment -%}
                 {% if sold_out %}
                     <div class="grid-product__tag grid-product__tag--sold-out">
                         {{ 'products.product.sold_out' | t }}
@@ -338,7 +348,9 @@
                             {% endif %}
                             {% if product.price_varies %}
                                 {%- assign price = product.price_min | money -%}
-                                {{ 'products.general.from_text_html' | t: price: price }}
+                                <span class="from-price">
+                                    {{ 'products.general.from_text_html' | t: price: price }}
+                                </span>
                             {% else %}
                                 {{ product.price  | money }}
                             {% endif %}
@@ -365,7 +377,9 @@
                                     {%- endif -%}
                                 {% endfor %}
                             {%- endcapture -%}
+                            {%- comment -%}
                             {%- render 'the-ideal-sunday-product-review-stars', sku: variant_skus -%}
+                            {%- endcomment -%}
 
                         </div>
                         {% if settings.enable_product_reviews %}
@@ -446,6 +460,9 @@
 
     <div class="grid__item grid-product {{ grid_item_width }}{% if sold_out %} product-sold-out{% endif %}{% if settings.quick_shop_enable and sold_out == false %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}">
         <div class="grid-product__content">
+            {%- comment -%}
+            {% render 'flits_wishlist_snippet' with 'flits_collection_page_wsl_btn' %}
+            {%- endcomment -%}
             {% if sold_out %}
                 <div class="grid-product__tag grid-product__tag--sold-out">
                     {{ 'products.product.sold_out' | t }}
@@ -533,7 +550,9 @@
                         {% endif %}
                         {% if product.price_varies %}
                             {%- assign price = product.price_min | money -%}
-                            {{ 'products.general.from_text_html' | t: price: price }}
+                            <span class="from-price">
+                                {{ 'products.general.from_text_html' | t: price: price }}
+                            </span>
                         {% else %}
                             {{ product.price  | money }}
                         {% endif %}
@@ -560,7 +579,9 @@
                                 {%- endif -%}
                             {% endfor %}
                         {%- endcapture -%}
+                        {%- comment -%}
                         {%- render 'the-ideal-sunday-product-review-stars', sku: variant_skus -%}
+                        {%- endcomment -%}
 
                     </div>
                     {% if settings.enable_product_reviews %}

@@ -18,7 +18,7 @@
     <div class="product-values-wrapper">
       <div class="product-values">
         {% for tag in values %}
-            {% assign tag-file = tag | downcase | replace: " ", "-" | prepend: "icon-product-" | append: "-1.svg" %}
+            {% assign tag-file = tag | downcase | replace: " ", "-" | prepend: "tis-icon-product-" | append: ".svg" %}
             {% assign url = tag | downcase | replace: " ", "-" | prepend: "/collections/" | append: "-products" %}
               <a href="{{url}}">
                 <img src="{{ tag-file | asset_url }}" alt="{{tag}}" onError="style.display = 'none';">

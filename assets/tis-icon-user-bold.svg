@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-tis-icon-user-bold">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="tis-icon-user-bold" clip-path="url(#clip-tis-icon-user-bold)">
+    <g id="Iconly_Bold_Profile" data-name="Iconly/Bold/Profile" transform="translate(20 16)">
+      <g id="Profile" transform="translate(4 2)">
+        <path id="Profile-2" data-name="Profile" d="M0,53.87c0-8.845,11.978-11.054,26-11.054,14.1,0,26,2.29,26,11.13S40.023,65,26,65C11.9,65,0,62.71,0,53.87ZM8.8,17.2A17.205,17.205,0,1,1,26,34.4,17.14,17.14,0,0,1,8.8,17.2Z" transform="translate(0 0)" fill="#1f1f83"/>
+      </g>
+    </g>
+  </g>
+</svg>

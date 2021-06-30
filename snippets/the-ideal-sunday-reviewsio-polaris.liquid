@@ -3,7 +3,7 @@
 <div class="index-section product-reviews-wrapper">
     <div id="product-reviews" class="page-width">
         <header class="section-header">
-            <h3 class="section-header__title">Reviews</h3>
+            <h3 class="section-header__title">Customer Reviews</h3>
         </header>
         <div id="ReviewsWidget"></div>
     </div>
@@ -18,7 +18,7 @@
 
         //Content settings (store_review,product_review,questions). Choose what to display in this widget:
         options: {
-            types: 'product_review,questions',
+            types: 'product_review',
             lang: 'en',
             //Possible layout options: bordered, large and reverse.
             layout: '',
@@ -48,14 +48,14 @@
                 enable_percent_recommended: false, //Show what percentage of reviewers recommend it
                 enable_write_review: true, //Show "Write Review" button
                 enable_ask_question: true, //Show "Ask Question" button
-                enable_sub_header: true, //Show subheader
+                enable_sub_header: false, //Show subheader
             },
 
             //Filtering settings:
             filtering:{
                 enable: true, //Show filtering options
-                enable_text_search: true, //Show search field
-                enable_sorting: true, //Show sorting options (most recent, most popular)
+                enable_text_search: false, //Show search field
+                enable_sorting: false, //Show sorting options (most recent, most popular)
                 enable_overall_rating_filter: true, //Show overall rating breakdown filter
                 enable_ratings_filters: true, //Show product attributes filter
                 enable_attributes_filters: true, //Show author attributes filter
@@ -73,11 +73,11 @@
                 enable_product_name: true, //Show display product name
                 enable_images: true, //Show display review photos
                 enable_ratings: true, //Show product attributes (additional ratings)
-                enable_share: true, //Show share buttons
-                enable_helpful_vote: true, //Show "was this helpful?" section
-                enable_helpful_display: true, //Show how many times times review upvoted
-                enable_report: true, //Show report button
-                enable_date: true, //Show when review was published
+                enable_share: false, //Show share buttons
+                enable_helpful_vote: false, //Show "was this helpful?" section
+                enable_helpful_display: false, //Show how many times times review upvoted
+                enable_report: false, //Show report button
+                enable_date: true, //Show when review was published 
             },
         },
         //Translation settings
@@ -87,18 +87,18 @@
         //Style settings:
         styles: {
             //Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.
-            '--base-font-size': '16px',
+            '--base-font-size': 'var(--typeBaseSize)',
 
             //Button styles (shared between buttons):
             '--common-button-font-family': 'inherit',
             '--common-button-font-size':'15px',
-            '--common-button-font-weight':'500',
+            '--common-button-font-weight':'600',
             '--common-button-letter-spacing':'0',
             '--common-button-text-transform':'none',
             '--common-button-vertical-padding':'10px',
             '--common-button-horizontal-padding':'20px',
             '--common-button-border-width':'0px',
-            '--common-button-border-radius':'var(--buttonRadius)',
+            '--common-button-border-radius':'var(--buttonBorderRadius)',
 
             //Primary button styles:
             '--primary-button-bg-color': 'var(--colorTextBody)',
@@ -118,9 +118,9 @@
 
             //Heading styles:
             '--heading-text-color': 'var(--colorTextBody)',
-            '--heading-text-font-weight': '500',
+            '--heading-text-font-weight': '700',
             '--heading-text-font-family': 'inherit',
-            '--heading-text-line-height': '1.4',
+            '--heading-text-line-height': '1.8',
             '--heading-text-letter-spacing': '0',
             '--heading-text-transform': 'none',
 
@@ -128,7 +128,7 @@
             '--body-text-color': 'var(--colorTextBody)',
             '--body-text-font-weight': '300',
             '--body-text-font-family': 'inherit',
-            '--body-text-line-height': '1.4',
+            '--body-text-line-height': '1.8',
             '--body-text-letter-spacing': '0',
             '--body-text-transform': 'none',
 
@@ -140,7 +140,7 @@
             '--inputfield-border-color': 'var(--colorBorder)',
             '--inputfield-background-color': '#fff',
             '--inputfield-border-width': '1px',
-            '--inputfield-border-radius': '6px',
+            '--inputfield-border-radius': 'var(--buttonBorderRadius)',
 
             '--common-border-color': 'rgb(218, 233, 247)',
             '--common-border-width': '1px',
@@ -184,7 +184,7 @@
             '--pagination-tab-text-color': 'var(--colorTextBody)',
             '--pagination-tab-text-transform': 'none',
             '--pagination-tab-text-letter-spacing': '0',
-            '--pagination-tab-text-font-size': '16px',
+            '--pagination-tab-text-font-size': '14px',
             '--pagination-tab-text-font-weight': '400',
 
             //Pagination & tabs styles (active):

@@ -120,7 +120,7 @@
 
     {%- if section.settings.blog_show_date -%}
       <div class="article__date">
-        {{ article.published_at | time_tag: format: 'month_day_year' }}
+        {{ article.published_at | time_tag: format: 'month_day_year' }} • Written by {{ article.author }}
       </div>
     {%- endif -%}
 
@@ -132,17 +132,22 @@
       {{ article.content }}
     </div>
 
+    <!-- {%- if section.settings.blog_show_author -%}
+      <div class="article__author">Written by {{ article.author }}</div>
+    {%- endif -%} -->
+
+    
+
     <div class="article-related-products">
       {% include 'pro-blogger.snippet.related-products' %}
     </div>
 
-    {%- if section.settings.blog_show_author -%}
-      <div class="article__author">Written by {{ article.author }}</div>
-    {%- endif -%}
-
     {%- if section.settings.social_sharing_blog -%}
+      <h3>Share this post</h3>
       {%- render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image -%}
     {%- endif -%}
+
+    
 
     {%- if blog.comments_enabled? -%}
 

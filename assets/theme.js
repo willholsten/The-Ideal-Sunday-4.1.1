@@ -6446,8 +6446,6 @@ lazySizesConfig.expFactor = 4;
           childVertical: this.cache.thumbSlider.dataset.position === 'beside',
           pageDots: true, // mobile only with CSS
           wrapAround: true,
-          selectedAttraction: 0.01,
-          friction: 0.15,
           callbacks: {
             onChange: this.onSlideChange.bind(this)
           }
@@ -7094,4 +7092,5 @@ lazySizesConfig.expFactor = 4;
 
     document.dispatchEvent(new CustomEvent('page:loaded'));
   });
+
 })();

@@ -1,51 +1,30 @@
 {%- style -%}
 
-  /* Recoleta Font */
-
-  <!-- @font-face {
-    font-family: "TheIdealSundayFont";
-    src: url('{{ "RecoletaCustom-Regular.woff2" | asset_url }}') format("woff2");,
-    url('{{ "RecoletaCustom-Regular.woff" | asset_url }}') format("woff");
-  } -->
-
   @font-face {
-    font-family: "TheIdealSundayFontLight";
-    src: url('{{ "RecoletaCustom-Light.woff2" | asset_url }}') format("woff2"),
-    url('{{ "RecoletaCustom-Light.woff" | asset_url }}') format("woff");    
-  }
-
-  @font-face {
-    font-family: "TheIdealSundayFontLogo";
-    src: url('{{ "RecoletaCustom-Regular.woff2" | asset_url }}') format("woff2"),
-    url('{{ "RecoletaCustom-Regular.woff" | asset_url }}') format("woff");    
-  }
-
-  @font-face {
-    font-family: "FSMeridian";
-    src: url('{{ "FS-Meridian.otf" | asset_url }}') format("opentype");
+    font-family: "Cocogoose";
+    src: url('{{ "Cocogoose-Pro-Regular-1.woff2" | asset_url }}') format("woff2");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
   }
 
   @font-face {
-    font-family: "FSMeridian";
-    src: url('{{ "FS-Meridian-Medium.otf" | asset_url }}') format("opentype");
+    font-family: "Cocogoose";
+    src: url('{{ "Cocogoose-Pro-Light.woff2" | asset_url }}') format("woff2");
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
   }
 
 
 
   :root {
-    --typeHeaderPrimary: 'TheIdealSundayFontLight';
-    --typeHeaderLogo: 'TheIdealSundayFontLogo';
+    --typeHeaderPrimary: 'Cocogoose';
     --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
     --typeHeaderSize: {{ settings.type_header_base_size | default: '32' | append: 'px' }};
-    --typeHeaderWeight: {{ settings.type_header_font_family.weight }};
+    --typeHeaderWeight: 700;
     --typeHeaderLineHeight: {{ settings.type_header_line_height | default: 1.4 }};
     --typeHeaderSpacing: {{ settings.type_header_spacing | default: '25' | divided_by: 1000.00 | append: 'em' }};
 
-    --typeBasePrimary:'FSMeridian';
+    --typeBasePrimary:'Cocogoose';
     --typeBaseFallback:{{ settings.type_base_font_family.fallback_families }};
     --typeBaseSize: {{ settings.type_base_size | default: 16 | append: 'px' }};
     --typeBaseWeight: normal;

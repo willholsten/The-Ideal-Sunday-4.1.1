@@ -449,13 +449,24 @@
           },
           {
             "type": "text",
-            "id": "button_label",
+            "id": "button_label_1",
             "label": "Button label",
             "default": "Optional button"
           },
           {
             "type": "url",
-            "id": "button_link",
+            "id": "button_link_1",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Button label",
+            "default": "Optional button" 
+          },
+          {
+            "type": "url",
+            "id": "button_link_2",
             "label": "Button link"
           },
           {
@@ -466,7 +477,7 @@
             "options": [
               {
                 "value": "left",
-                "label": "Image on left"
+                "label": "Image on left" 
               },
               {
                 "value": "right",
@@ -494,9 +505,19 @@
             "type": "range",
             "id": "image_width",
             "label": "Image width",
-            "default": 500,
-            "min": 100,
-            "max": 500,
+            "default": 100,
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "%"
+          },
+          {
+            "type": "range",
+            "id": "image_position",
+            "label": "Vertical image position",
+            "default": 0,
+            "min": -150,
+            "max": 150,
             "step": 10,
             "unit": "px"
           },
@@ -508,7 +529,7 @@
           },
           {
             "type": "text",
-            "id": "title",
+            "id": "title", 
             "label": "Title",
             "default": "Image with text"
           },
@@ -520,13 +541,24 @@
           },
           {
             "type": "text",
-            "id": "button_label",
+            "id": "button_label_1",
             "label": "Button label",
             "default": "Optional button"
           },
           {
             "type": "url",
-            "id": "button_link",
+            "id": "button_link_1",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Button label",
+            "default": "Optional button"
+          },
+          {
+            "type": "url",
+            "id": "button_link_2",
             "label": "Button link"
           },
           {
@@ -588,6 +620,16 @@
             "type": "url",
             "id": "button_link",
             "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Button label 2"
+          },
+          {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "Button link 2"
           },
           {
             "type": "image_picker",
@@ -1318,4 +1360,4 @@
     ]
 
   }
-{% endschema %}
+{% endschema %} 

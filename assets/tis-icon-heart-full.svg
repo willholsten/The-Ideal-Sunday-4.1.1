@@ -1,0 +1,9 @@
+<svg width="30" height="30" viewBox="0 0 100 100">
+  <g id="tis-icon-heart-full" clip-path="url(#clip-tis-icon-heart-full)">
+    <g id="heart" transform="translate(10 -18.514)">
+      <g id="Group_6132" data-name="Group 6132" transform="translate(0 35.514)">
+        <path id="Path_54877" data-name="Path 54877" d="M57.49,35.516h0A22.549,22.549,0,0,0,40.121,43.54a22.244,22.244,0,0,0-17.369-8.024A22.752,22.752,0,0,0,0,58.268C0,79.8,37.582,100.827,39.106,101.639a1.828,1.828,0,0,0,2.031,0c1.524-.813,39.106-21.533,39.106-43.372A22.752,22.752,0,0,0,57.49,35.516Z" transform="translate(0 -35.514)" fill="#1f1f83" stroke="#1f1f83" stroke-width="0.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

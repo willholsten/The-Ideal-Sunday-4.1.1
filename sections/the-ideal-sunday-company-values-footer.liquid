@@ -16,6 +16,11 @@
 
   <div class="company-values-inner" style="background-color: {{ section.settings.background_color }};"> 
     <div class="page-width company-values-holder">
+      {%- if section.settings.title != blank -%}
+        <div class="section-header">
+          <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        </div>
+      {%- endif -%}
       <div class="grid grid--flush-bottom">
         {%- for block in section.blocks -%}
           <div class="grid__item {{ grid_item_width }}" {{ block.shopify_attributes }} data-aos="row-of-3">
@@ -26,7 +31,7 @@
             {%- endif -%}
             <div>
               {%- if block.settings.title != blank -%}
-                <div class="h3">{{ block.settings.title }}</div>
+                <div class="h3 yellow-strike">{{ block.settings.title }}</div>
               {%- endif -%}
               {%- if block.settings.text != blank -%}
                 <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
@@ -51,6 +56,11 @@
     "max_blocks": 3,
     "class": "company-values",
     "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
       {
         "type": "checkbox",
         "id": "hide_homepage",
