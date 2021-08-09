@@ -15,7 +15,7 @@
     "color_header_text": "#1E1E95",
     "color_announcement": "#FFEE6E",
     "color_announcement_text": "#1E1E95",
-    "color_footer": "#1E1E95",
+    "color_footer": "#1d1d80",
     "color_footer_text": "#ffffff",
     "color_drawer_background": "#ffffff",
     "color_drawer_text": "#1E1E95",
@@ -56,8 +56,8 @@
     "product_hover_image": true,
     "sku_enable": false,
     "quantity_enable": false,
-    "variant_labels_enable": false,
-    "variant_type": "button",
+    "variant_labels_enable": true,
+    "variant_type": "dropdown",
     "enable_payment_button": false,
     "inventory_enable": true,
     "inventory_threshold": 2,
@@ -122,15 +122,33 @@
           "436f6bfc-057c-4925-948c-05aa433a61b4": {
             "type": "announcement",
             "settings": {
-              "text": "1 tree planted for every order",
-              "link_text": "Free UK delivery on orders over £40",
+              "text": "We plant a tree for every order",
+              "link_text": "",
               "link": "shopify:\/\/pages\/tree-planting"
+            }
+          },
+          "72a316d8-bfbb-45aa-97d8-16f28428787b": {
+            "type": "announcement",
+            "settings": {
+              "text": "Free delivery on orders over £40",
+              "link_text": "",
+              "link": "shopify:\/\/pages\/delivery-returns"
+            }
+          },
+          "a35df320-5736-44d1-bece-c45fffddf442": {
+            "type": "announcement",
+            "settings": {
+              "text": "Refer A friend and Save £10",
+              "link_text": "",
+              "link": "#smile-home"
             }
           }
         },
         "block_order": [
           "1524770014057",
-          "436f6bfc-057c-4925-948c-05aa433a61b4"
+          "436f6bfc-057c-4925-948c-05aa433a61b4",
+          "72a316d8-bfbb-45aa-97d8-16f28428787b",
+          "a35df320-5736-44d1-bece-c45fffddf442"
         ],
         "settings": {
           "main_menu_link_list": "header-menu",
@@ -139,7 +157,7 @@
           "header_style": "sticky",
           "sticky_index": false,
           "sticky_collection": false,
-          "announcement_compact": true,
+          "announcement_compact": false,
           "announcement_above_header": true,
           "toolbar_menu": "",
           "toolbar_social": false,
@@ -156,8 +174,8 @@
             "settings": {
               "show_footer_title": true,
               "title": "The Ideal Sunday",
-              "text": "<p>Eco friendly, plastic free and zero waste products from UK brands for those who care for our planet and want to make small changes towards living a greener lifestyle - Welcome to the Ideal Sunday, the eco shop who plant a tree for every order 🌳<\/p>",
-              "container_width": 30
+              "text": "<p>Eco friendly, plastic free and zero waste products from UK brands for those who care for our planet and want to make small changes towards living a greener lifestyle - Welcome to the Ideal Sunday, the eco shop who plant a tree for every order.<\/p>",
+              "container_width": 35
             }
           },
           "1494301487049": {
@@ -182,7 +200,7 @@
               "show_footer_title": true,
               "title": "Join Us & Save £5!",
               "text": "<p>Sign up for new arrivals, offers and get £5 off your first order over £25.<\/p>",
-              "container_width": 30
+              "container_width": 25
             }
           }
         },
@@ -216,7 +234,7 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "description_style": "default",
+          "description_style": "full",
           "social_enable": false,
           "image_position": "left",
           "image_size": "large",
@@ -421,6 +439,7 @@
           "close_text": "No thanks",
           "enable_newsletter": true,
           "button_label": "Optional button",
+          "button_link": "",
           "enable_button": false
         }
       },
@@ -492,11 +511,11 @@
             "settings": {
               "promo_collection": "",
               "heading": "Did you know?",
-              "text": "You can plant extra trees with your order 🌳",
+              "text": "We plant a tree for every order but you can plant more here!",
               "link": "shopify:\/\/products\/plant-an-extra-tree",
-              "label": "Plant a tree",
+              "label": "Plant a Tree",
               "color_tint": "#fd4b7f",
-              "color_tint_opacity": 8,
+              "color_tint_opacity": 10,
               "framed": false
             }
           }
@@ -528,7 +547,7 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_heading": "You May Also Like",
+          "product_recommendations_heading": "Customers also purchased",
           "related_count": 4
         }
       },
@@ -551,7 +570,7 @@
               "align_text": "center",
               "narrow_column": true,
               "enlarge_text": false,
-              "background_color": "#FFFAF4"
+              "background_color": "#fffaf4"
             }
           },
           "645d7b77-b515-4666-b051-adbaa47a9bb0": {
@@ -562,117 +581,100 @@
               "align_text": "left"
             }
           },
+          "eba43f5a-0e76-4653-9e2e-25491cce77dd": {
+            "type": "question",
+            "settings": {
+              "title": "Where do you source your products from?",
+              "text": "<p>We source our products from small UK businesses who share our values for sustainability. The onboarding of new brands takes a lot of time and research before we start stocking their products on our website so you can be assured that whatever you buy from The Ideal Sunday is a truly sustainable product.<\/p>"
+            }
+          },
           "4331918f-bc25-45ac-a4ca-18b80f3495d9": {
             "type": "question",
             "settings": {
               "title": "How do you plant a tree for every order?",
-              "text": "<p>We have proudly partnered with Ecologi to plant a tree for every order placed on our site. Ecologi then plant the trees through the Eden Reforestion Project.<\/p>"
+              "text": "<p>We have proudly partnered with Ecologi to plant a tree for every order placed on our website. You can also plant as many more trees as you like by adding trees in your bag or going <a href=\"https:\/\/theidealsunday.com\/products\/plant-an-extra-tree\" target=\"_blank\" title=\"The Ideal Sunday Plant an Extra Tree\">here<\/a>. <\/p><p>At the end of every month we count up the number of orders and extra trees and plant them on the Ecologi website. Why not check out our <a href=\"https:\/\/ecologi.com\/theidealsunday\" target=\"_blank\" title=\"The Ideal Sunday Digital Forest\">Digital Forest<\/a> to see all the trees we’ve planted!<\/p>"
             }
           },
           "abdaa23e-13b6-442c-98f2-84021b6f0547": {
             "type": "question",
             "settings": {
               "title": "What packaging will you use for my delivery?",
-              "text": "<p>We use a range of packaging to get your order safely to your door. This could come as either a Green Jiffy Bag (large envelope), or a variety of cardboard boxes. All of these are environmentally friendly and biodegradable. We then safely package the contents with recycled paper and seal it with a solvent free packaging tape.<\/p>"
+              "text": "<p>We strongly believe that all packaging should be fully recyclable and of course 100% plastic free. What’s the point in shopping sustainably if your products come in plastic packaging?! You can shop with confidence knowing that we have done the research to get your products to you in the most eco-friendly manner.<\/p>"
             }
           },
           "769c1a36-d69a-4267-b1eb-2f35ae7989ae": {
             "type": "rich-text",
             "settings": {
-              "title": "Shopping",
+              "title": "Rewards & Referrals",
               "text": "",
               "align_text": "left"
-            }
-          },
-          "8febc6c9-31c7-4631-9b61-b9c1983a86cc": {
-            "type": "question",
-            "settings": {
-              "title": "How does the Spend & Save work?",
-              "text": "<p>We&#x27;ve tried to encourage larger, less frequent orders so we have a smaller carbon footprint through delivery services. <\/p><p>To reward shopping this way we have introduced Spend &amp; Save, the more you spend the more you save!<br\/><br\/>Spend £75, Save £10<br\/>Spend £100, Save £15<br\/>Spend £150, Save £25<\/p><p>All with free UK delivery!<\/p><p>Spend &amp; Save is available store wide, even on discounted products, but it can&#x27;t be used in conjunction with any other discounts like promotion codes.<\/p>"
             }
           },
           "3df1a3af-c90c-49fc-903f-60cae92bcfbc": {
             "type": "question",
             "settings": {
               "title": "What are Reward Points and how can I use them?",
-              "text": "<p>Once you&#x27;ve created an account with us you can start earning Reward Points on purchases and referrals. These points can be exchanged for discount codes that you can use at checkout. <\/p><p>To get you started, you will earn 100 points just for signing up and 50 points each for liking us on Instagram and Facebook.<\/p><p>For more information on Rewards Points click <a title=\"#smile-home\" href=\"#smile-home\">here<\/a>.<\/p>"
-            }
-          },
-          "page-faq-template-0": {
-            "type": "rich-text",
-            "settings": {
-              "title": "Delivery",
-              "text": "",
-              "align_text": "left"
-            }
-          },
-          "75a00e2a-1864-4f83-a55c-f6ce70c9feb3": {
-            "type": "question",
-            "settings": {
-              "title": "When will my order be dispatched?",
-              "text": "<p>All orders placed before 12PM Mon-Fri will be dispatched that day. Orders placed after this time will be dispatched the next working day. <\/p>"
-            }
-          },
-          "page-faq-template-2": {
-            "type": "question",
-            "settings": {
-              "title": "How long will my order take?",
-              "text": "<p>We send UK orders using Royal Mail 1st Class which typically take 1 working day.<\/p><p>Please visit our <a href=\"\/pages\/delivery-returns\" title=\"Delivery &amp; Returns\">Delivery &amp; Returns<\/a> page for more information.<\/p><p><\/p>"
-            }
-          },
-          "page-faq-template-1": {
-            "type": "question",
-            "settings": {
-              "title": "Do you deliver internationally?",
-              "text": "<p>Yes, we are based in the UK but offer worldwide deliveries.<\/p>"
+              "text": "<p>You can earn 5 points for every £1 spent at our store. You can also earn points for creating an account, following us on Instagram and Facebook and for celebrating your birthday! <\/p><p>500 points = £5 coupon<\/p><p>900 points = £10 coupon<\/p><p>For more information on Rewards Points click <a href=\"#smile-home\" title=\"#smile-home\">here<\/a>.<\/p>"
             }
           },
           "474b5049-5fd3-436c-ae09-d61575f5efe4": {
             "type": "question",
             "settings": {
-              "title": "I haven't received my order yet, where is it?",
-              "text": "<p>If you haven&#x27;t received your order and the allocated delivery time has passed then please feel free to email us at<a href=\"\"> support@theidealsunday.com<\/a> so we can follow up on the progress for you.<\/p>"
+              "title": "How do referrals work?",
+              "text": "<p>You and a friend can each earn £10 credit to use towards your next purchase. Simply refer a friend <a href=\"#smile-home\" title=\"#smile-home\">here<\/a> and once they have placed an order you will receive the £10 discount code.<\/p>"
             }
           },
           "page-faq-template-3": {
             "type": "rich-text",
             "settings": {
-              "title": "Returns and exchanges",
+              "title": "Delivery & Returns",
               "text": "",
               "align_text": "left"
             }
           },
-          "2036ddd7-a8cd-43d4-9a03-799d1c4f679e": {
+          "e3c9fdbc-5b5b-4371-8ac1-668f077d30e4": {
             "type": "question",
             "settings": {
-              "title": "What happens if I receive the wrong item?",
-              "text": "<p>In the unlikely event you receive the wrong item, please email us at <a href=\"mailto:info@theidealsunday.com\" title=\"mailto:info@theidealsunday.com\">info@theidealsunday.com<\/a> so we can send the correct item to you and arrange a return for the item you receeived.<\/p>"
+              "title": "I just placed my order, when will my items be dispatched?",
+              "text": "<p>Firstly, thanks for placing an order! If you placed it before 12pm Mon - Fri then it will dispatch that same day. If you placed it after 12pm then it will dispatch the next working day. Weekend orders will dispatch on Monday unless that day is a bank holiday which means it will dispatch Tuesday. <\/p>"
             }
           },
-          "page-faq-template-4": {
+          "cd1f196a-8979-4e40-acd4-958b11cdff7d": {
             "type": "question",
             "settings": {
-              "title": "How do I return an item?",
-              "text": "<p>Whether you have received a faulty item or have simply changed your mind, we offer returns and refunds to suit your needs. Please let us know within 14 days from the date of dispatch by emailing <a href=\"\">support@theidealsunday.com<\/a> so we can arrange this with you. Please refer to our <a href=\"\/pages\/delivery-returns\" title=\"Delivery &amp; Returns\">Delivery &amp; Returns<\/a> page for more details.<\/p>"
+              "title": "How long until I receive my order?",
+              "text": "<p><strong>UK<\/strong><br\/>Standard delivery (48hr) will be delivered 2-3 days after dispatch. 24hr hour delivery will be delivered 1-2 days after dispatch which is usually next day if you order before 12pm.<br\/><\/p><p><strong>Europe<\/strong><\/p><p>Your delivery should take between 5 - 7 working days.<\/p><p><\/p><p><strong>Rest Of The World<\/strong><\/p><p>Your delivery should take between 7 - 10 working days.<\/p><p><\/p><p><strong>Please note: <\/strong>Due to COVID-19 some orders are being held at the border for longer so delays can be expected.<\/p><p><strong>Please note:<\/strong> All international orders are subject to import and\/or customs charges, which the receiver\/customer is liable for. The Ideal Sunday cannot be responsible for these additional charges.<\/p>"
+            }
+          },
+          "dbe122a5-20eb-4825-9bbb-a674ff5bc85f": {
+            "type": "question",
+            "settings": {
+              "title": "I don’t like my product, can I return it?",
+              "text": "<p>We gladly accept returns of unused products within 14 days of receipt - to read more please visit our <a href=\"\/pages\/delivery-returns\" title=\"Delivery & Returns\">Delivery & Returns<\/a> page.<br\/><br\/><strong>Please note:<\/strong> Products must be unused and in their original packaging. Products will be assessed upon return before a refund is processed.<\/p>"
+            }
+          },
+          "439aa419-8b00-4d7c-84ea-321ba7b336d2": {
+            "type": "question",
+            "settings": {
+              "title": "Something is wrong with my order!",
+              "text": "<p>If you have received an incorrect product or your product is faulty then please let us know within 14 days of receipt and one of our customer service team will advise on the return of the original product and assist you with a replacement or refund.<\/p>"
             }
           }
         },
         "block_order": [
           "a49d7f28-95a1-47fe-b9cb-050632080f67",
           "645d7b77-b515-4666-b051-adbaa47a9bb0",
+          "eba43f5a-0e76-4653-9e2e-25491cce77dd",
           "4331918f-bc25-45ac-a4ca-18b80f3495d9",
           "abdaa23e-13b6-442c-98f2-84021b6f0547",
           "769c1a36-d69a-4267-b1eb-2f35ae7989ae",
-          "8febc6c9-31c7-4631-9b61-b9c1983a86cc",
           "3df1a3af-c90c-49fc-903f-60cae92bcfbc",
-          "page-faq-template-0",
-          "75a00e2a-1864-4f83-a55c-f6ce70c9feb3",
-          "page-faq-template-2",
-          "page-faq-template-1",
           "474b5049-5fd3-436c-ae09-d61575f5efe4",
           "page-faq-template-3",
-          "2036ddd7-a8cd-43d4-9a03-799d1c4f679e",
-          "page-faq-template-4"
+          "e3c9fdbc-5b5b-4371-8ac1-668f077d30e4",
+          "cd1f196a-8979-4e40-acd4-958b11cdff7d",
+          "dbe122a5-20eb-4825-9bbb-a674ff5bc85f",
+          "439aa419-8b00-4d7c-84ea-321ba7b336d2"
         ],
         "settings": {
           "page_title_enable": false,
@@ -692,6 +694,7 @@
               "cta_text1": "Shop Ocean Bottle",
               "cta_link1": "shopify:\/\/products\/reusable-insulated-bottle",
               "cta_text2": "",
+              "cta_link2": "",
               "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Ocean_Bottle_b3a5b192-2667-4721-8aa1-07dcac10f14e.jpg",
               "video_url": "",
               "width": "33",
@@ -713,6 +716,7 @@
               "cta_text1": "Shop Haoma",
               "cta_link1": "shopify:\/\/collections\/haoma",
               "cta_text2": "",
+              "cta_link2": "",
               "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Haoma.jpg",
               "video_url": "",
               "width": "33",
@@ -734,6 +738,7 @@
               "cta_text1": "Shop Neat",
               "cta_link1": "shopify:\/\/collections\/neat",
               "cta_text2": "",
+              "cta_link2": "",
               "image": "shopify:\/\/shop_images\/Promotion_Grid_-_Neat.jpg",
               "video_url": "",
               "width": "33",
@@ -768,6 +773,7 @@
       },
       "161824111578f03b50": {
         "type": "the-ideal-sunday-company-values",
+        "disabled": true,
         "blocks": {
           "e6903c24-61aa-4f28-b641-2f42dff24d76": {
             "type": "promotion",
@@ -775,16 +781,18 @@
               "enable_image": true,
               "title": "Ethical brands",
               "text": "<p>We stand behind the products we sell - They are ethically sourced and things we love to use ourselves!<\/p>",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           },
           "867f0ad6-d7e0-442c-9fa9-e50f2b0f0e79": {
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Shop small",
-              "text": "<p>We love working with small UK businesses to bring you innovative products for you and your home.<\/p>",
-              "button_label": ""
+              "title": "Plastic Free Packaging",
+              "text": "<p>All of our orders are delivery in 100% plastic free recyclable packaging. Always!<\/p>",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "802490e3-f02d-4917-b33f-7719f1fc2187": {
@@ -793,7 +801,8 @@
               "enable_image": true,
               "title": "We plant trees",
               "text": "<p>We’ve pledged to plant a tree for every order and you can plant more at checkout.<\/p>",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           }
         },
@@ -814,18 +823,20 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Ethical brands",
-              "text": "<p>We stand behind the products we sell - They are ethically sourced and things we love to use ourselves!<\/p>",
-              "button_label": ""
+              "title": "Ethical products",
+              "text": "<p>We stand behind the products we sell - They are ethically sourced from small UK businesses.<\/p>",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "the-ideal-sunday-company-values-footer-1": {
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "title": "Shop small",
-              "text": "<p>We love working with small UK businesses to bring you innovative products for you and your home.<\/p>",
-              "button_label": ""
+              "title": "Plastic free packaging",
+              "text": "<p>All of our orders are delivered in 100% plastic free recyclable packaging. Always!<\/p>",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "the-ideal-sunday-company-values-footer-2": {
@@ -834,7 +845,8 @@
               "enable_image": true,
               "title": "We plant trees",
               "text": "<p>We’ve pledged to plant a tree for every order and you can plant more at checkout.<\/p>",
-              "button_label": ""
+              "button_label": "",
+              "button_link": ""
             }
           }
         },
@@ -845,7 +857,7 @@
         ],
         "settings": {
           "title": "Why shop with us?",
-          "hide_homepage": true,
+          "hide_homepage": false,
           "background_color": "#e5f7ff"
         }
       },
@@ -1133,7 +1145,7 @@
             "settings": {
               "full_width": false,
               "space_around": true,
-              "code": "<div class=\"index-section\">\n  <h2>Delivery<\/h2>\n  <p><strong>UK DELIVERY<\/strong><\/p>\n  <p><b>Free 48 Hour UK Delivery for orders over £40.<\/b><\/p>\n<p>Orders placed before 12pm Monday-Friday will dispatch same day.<\/p>\n  <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n <tr>\n    <td style=\"width: 78.61060329067642%;\">Royal Mail 48 Hour (2-3 days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£3.49<\/td>\n    <\/tr>\n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Royal Mail 24 Hour (1-2 Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£4.75<\/td>\n    <\/tr>\n    <\/tbody> \n  <\/table><\/div>\n  <p><strong>INTERNATIONAL DELIVERY<\/strong><\/p>\n\n<p><b>Deliveries to Europe are currently on hold due to the new Brexit policies. We apologise for any inconvenience<\/b><\/p>\n <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n    \n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Outside Europe - Tracked (7-10 Working Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£15.00<\/td>\n    <\/tr>\n    <\/tbody>\n  <\/table><\/div>\n\n<div class=\"delivery-notes text-block\">\n  <p>Delivery times are from time of dispatch.<\/p>\n  <p>Orders outside of the EU may be subject to customs charges and tax duty which you will need to pay before the order is delivered.<\/p>\n  <span><b>Customs Delays<\/b><\/span>\n  <p>Due to COVID-19 custom delivery officers worldwide are experiencing serious delays processing custom clearance.<\/p>\n<\/div>\n\n<div class=\"index-section\">\n  <h2>Returns<\/h2>\n  <p>\n    If you aren't 100% satisfied with your order you may return it to us as long\n    as it's unused and in it's original packaging. Please notify us within 14\n    days from date of dispatch by emailing\n    <a href=\"mailto:support@theidealsunday.com\">support@theidealsunday.com<\/a>\n    so we can organise the return.\n  <\/p>\n  <p>\n    Once your order has been returned and checked we will issue a refund\n    (excluding the delivery costs).\n  <\/p>\n  <p>\n    Unless your item is faulty you will be\n    responsible for paying the return delivery cost. We suggest you send\n    your returns via a tracked service as we cannot take any responsibility for\n    lost items.\n  <\/p>\n<p><b>Due to the nature of our products there are many that we are unable to accept back due to hygiene reasons, so please contact us before you send products back to us.<\/b><\/p>\n<\/div>\n<\/div>"
+              "code": "<div class=\"index-section\">\n  <h2>Delivery<\/h2>\n  <p><strong>UK DELIVERY<\/strong><\/p>\n  <p><b>Free 48 Hour UK Delivery for orders over £40.<\/b><\/p>\n<p>Orders placed before 12pm Monday-Friday will dispatch same day.<\/p>\n  <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n <tr>\n    <td style=\"width: 78.61060329067642%;\">Royal Mail 48 Hour (2-3 days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£2.95<\/td>\n    <\/tr>\n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Royal Mail 24 Hour (1-2 Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£4.75<\/td>\n    <\/tr>\n    <\/tbody> \n  <\/table><\/div>\n  <p><strong>INTERNATIONAL DELIVERY<\/strong><\/p>\n\n<p><b>Deliveries to Europe are currently on hold due to the new Brexit policies. We apologise for any inconvenience<\/b><\/p>\n <div class=\"table-wrapper\"><table style=\"width: 100%; margin-bottom: 20px;\" border=\"1\">\n    <tbody>\n    \n    <tr>\n    <td style=\"width: 78.61060329067642%;\">Outside Europe - Tracked (7-10 Working Days)<\/td>\n    <td style=\"width: 17.915904936014627%; text-align: right;\">£15.00<\/td>\n    <\/tr>\n    <\/tbody>\n  <\/table><\/div>\n\n<div class=\"delivery-notes text-block\">\n  <p>Delivery times are from time of dispatch.<\/p>\n  <p>Orders outside of the EU may be subject to customs charges and tax duty which you will need to pay before the order is delivered.<\/p>\n  <span><b>Customs Delays<\/b><\/span>\n  <p>Due to COVID-19 custom delivery officers worldwide are experiencing serious delays processing custom clearance.<\/p>\n<\/div>\n\n<div class=\"index-section\">\n  <h2>Returns<\/h2>\n  <p>\n    If you aren't 100% satisfied with your order you may return it to us as long\n    as it's unused and in it's original packaging. Please notify us within 14\n    days from date of dispatch by emailing\n    <a href=\"mailto:support@theidealsunday.com\">support@theidealsunday.com<\/a>\n    so we can organise the return.\n  <\/p>\n  <p>\n    Once your order has been returned and checked we will issue a refund\n    (excluding the delivery costs).\n  <\/p>\n  <p>\n    Unless your item is faulty you will be\n    responsible for paying the return delivery cost. We suggest you send\n    your returns via a tracked service as we cannot take any responsibility for\n    lost items.\n  <\/p>\n<p><b>Due to the nature of our products there are many that we are unable to accept back due to hygiene reasons, so please contact us before you send products back to us.<\/b><\/p>\n<\/div>\n<\/div>"
             }
           }
         },
@@ -1157,7 +1169,7 @@
               "link": "shopify:\/\/collections\/all-products",
               "label": "Shop All products",
               "color_tint": "#fd4b7f",
-              "color_tint_opacity": 8,
+              "color_tint_opacity": 10,
               "framed": false
             }
           }
@@ -1168,8 +1180,8 @@
         "settings": {
           "full_width": false,
           "gutter_size": 10,
-          "space_above": true,
-          "space_below": false
+          "space_above": false,
+          "space_below": true
         }
       },
       "1618434431426f981f": {
@@ -1361,12 +1373,195 @@
           "full_width": false,
           "space_around": true
         }
+      },
+      "16250616364b984409": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "16250616364b984409-0": {
+            "type": "image",
+            "settings": {
+              "top_subheading": "Plastic Free July Week 4",
+              "title": "15% off\nOn The Go",
+              "title_size": 90,
+              "subheading": "It's the last week of Plastic Free July! This week we're focussing on products you can take with you so you don't have to resort to single use plastic!",
+              "link": "shopify:\/\/collections\/plastic-free-july-week-4-on-the-go",
+              "link_text": "Shop The Deals",
+              "link_2": "https:\/\/www.plasticfreejuly.org\/take-the-challenge\/",
+              "link_text_2": "Take The Challenge",
+              "color_accent": "#ffee6e",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/PFJ-4-Homepage-Hero-Desktop.png",
+              "image_mobile": "shopify:\/\/shop_images\/PFJ-4-Homepage-Hero-Mobile_dfb16d13-94f2-403c-a635-704f2edfc9ed.png",
+              "overlay_opacity": 0,
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "16250616364b984409-0"
+        ],
+        "settings": {
+          "section_height": "650px",
+          "mobile_height": "auto",
+          "parallax": false,
+          "style": "bars",
+          "autoplay": true,
+          "autoplay_speed": 5
+        }
+      },
+      "the-ideal-sunday-instagram": {
+        "type": "the-ideal-sunday-instagram",
+        "settings": {}
+      },
+      "1627111759cd93b6f6": {
+        "type": "the-ideal-sunday-logo-slider",
+        "blocks": {
+          "1627111759cd93b6f6-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-biodegradable_1.png",
+              "text": "Biodegradable",
+              "link": "shopify:\/\/collections\/biodegradable-products"
+            }
+          },
+          "1627111759cd93b6f6-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-compostable_1.png",
+              "text": "Compostable",
+              "link": "shopify:\/\/collections\/compostable-products"
+            }
+          },
+          "1627111759cd93b6f6-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-extra-tree_1.png",
+              "text": "Extra Trees",
+              "link": "shopify:\/\/collections\/extra-tree-products"
+            }
+          },
+          "1627111759cd93b6f6-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-free-delivery_1.png",
+              "text": "Free Delivery",
+              "link": "shopify:\/\/collections\/free-delivery-products"
+            }
+          },
+          "72f627e9-c45b-4e5d-8506-d4fe798912f1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-handmade_1.png",
+              "text": "Handmade",
+              "link": "shopify:\/\/collections\/handmade-products"
+            }
+          },
+          "16035067-548a-4fee-bac5-5fb48caff85c": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-natural_1.png",
+              "text": "Natural",
+              "link": "shopify:\/\/collections\/natural-products"
+            }
+          },
+          "dd7a99e9-0838-4505-8a36-b9af62ff4ad9": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-organic_1.png",
+              "text": "Organic",
+              "link": "shopify:\/\/collections\/organic-products"
+            }
+          },
+          "cdbcc6e8-6a7d-44b9-8462-b9efe9193b68": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-plastic-free_1.png",
+              "text": "Plastic Free",
+              "link": "shopify:\/\/collections\/plastic-free-products"
+            }
+          },
+          "bd432a41-5ccd-4cbc-aa90-d5c2e4c328a7": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-recyclable_1.png",
+              "text": "Recyclable",
+              "link": "shopify:\/\/collections\/recyclable-products"
+            }
+          },
+          "0102f31e-4bda-483f-97ad-ebb33d9ed123": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-uk-made_1.png",
+              "text": "UK Made",
+              "link": "shopify:\/\/collections\/uk-made-products"
+            }
+          },
+          "616b9411-549a-4d07-8ae5-8e9426b9da29": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tis-icon-product-vegan-friendly_1.png",
+              "text": "Vegan Friendly",
+              "link": "shopify:\/\/collections\/vegan-friendly-products"
+            }
+          }
+        },
+        "block_order": [
+          "1627111759cd93b6f6-0",
+          "1627111759cd93b6f6-1",
+          "1627111759cd93b6f6-2",
+          "1627111759cd93b6f6-3",
+          "72f627e9-c45b-4e5d-8506-d4fe798912f1",
+          "16035067-548a-4fee-bac5-5fb48caff85c",
+          "dd7a99e9-0838-4505-8a36-b9af62ff4ad9",
+          "cdbcc6e8-6a7d-44b9-8462-b9efe9193b68",
+          "bd432a41-5ccd-4cbc-aa90-d5c2e4c328a7",
+          "0102f31e-4bda-483f-97ad-ebb33d9ed123",
+          "616b9411-549a-4d07-8ae5-8e9426b9da29"
+        ],
+        "settings": {
+          "title": "Shop by values"
+        }
+      },
+      "page-sections-reviews-template": {
+        "type": "page-sections-reviews-template",
+        "blocks": {
+          "a63b3b14-f701-4c95-94e5-213ab290acde": {
+            "type": "intro-text",
+            "settings": {
+              "subtitle": "Reviews",
+              "title": "What our customers are saying",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false,
+              "background_color": "#fffaf4"
+            }
+          },
+          "8ccbdb73-b352-4a33-bd4d-3e9fc9d998c0": {
+            "type": "custom-html",
+            "settings": {
+              "full_width": false,
+              "space_around": true,
+              "code": "<link rel=\"stylesheet\" href=\"https:\/\/d1azc1qln24ryf.cloudfront.net\/40686\/revsglobal-pr-mod\/style-cf.css?-c0avz5\">\n<script src=\"https:\/\/widget.reviews.co.uk\/combined\/dist.js?v1\"><\/script>\n<link rel=\"stylesheet\" href=\"https:\/\/widget.reviews.co.uk\/combined\/style.css?v1\">\n<div id=\"ReviewsWidget\"><\/div>\n<script>\n    new ReviewsWidget('#ReviewsWidget', {\n        store: 'the-ideal-sunday',\n        widget: 'combined-widget',\n        options: {\n            types: 'store_review,product_review,questions', \/\/ store_review,product_review,questions (choose what content you prefer to show in this widget)\n            per_page: 20, \/\/ Any number (set how many reviews\/questions you want to show per page)\n\n            \/* Company Reviews Settings *\/\n            store_review:{\n                enable_social_sharing:true,\n                enable_helpful:true,\n                enable_smart_filters:true,\n                enable_rating_filters:true,\n                enable_featured_review_photos:true,\n                enable_featured_social_photos:true,\n                enable_toggle_filters:true,\n                enable_list_summary:true,\n                show_mention_text:true,\n                show_dates:true,\n                show_replies:true,\n                show_avatars:false,\n                show_photos:false,\n                show_verify_status:true\n            },\n\n            \/* Product Reviews Settings *\/\n            product_review: {\n                sku: '',\n                enable_write_review:true,\n                enable_smart_filters:true,\n                enable_rating_filters:true,\n                enable_toggle_filters:true,\n                enable_social_sharing:false,\n                enable_helpful:false,\n                enable_featured_review_photos:true,\n                enable_featured_social_photos:true,\n                show_mention_text:true,\n                show_dates:true,\n                show_replies:true,\n                show_avatars:false,\n                show_photos:true,\n                show_verify_status:true\n\n            },\n\n            \/* Questions & Answers Settings *\/\n            questions:{\n                enable_ask_question:true,\n                show_dates:false,\n                grouping:'9516'\n            }\n        },\n\n        \/* Customise Colours & Fonts *\/\n        styles: {\n            starColor:'#f47e27',\n            textColor:'#1E1E95',\n            primaryColor:'#333333',\n            textColor:'#666666',\n            neutralColor:'#ececec',\n            backgroundColor:'#ffffff',\n            formColor:'#dcdcdc',\n            baseTextSize:'14px',\n            header_style:''\n        },\n\n        \/* Customise Buttons *\/\n        buttons:{\n            smart_filter:'solid',\n            write_review:'solid',\n            selected_page:'outline'\n        },\n\n        \/* Avatar Settings *\/\n        avatars:{\n            enable_gravatar:false,\n            gravatar_fallback:'identicon'\n        },\n\n        \/* Other Options*\/\n        reviewsLogo:{\n            show_logo:true,\n            style:'black'\n        }\n\n    });\n<\/script>"
+            }
+          }
+        },
+        "block_order": [
+          "a63b3b14-f701-4c95-94e5-213ab290acde",
+          "8ccbdb73-b352-4a33-bd4d-3e9fc9d998c0"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
       }
     },
     "content_for_index": [
       "16224880136dab3d0d",
+      "16250616364b984409",
       "1622284163af916035",
-      "161824111578f03b50",
+      "1627111759cd93b6f6",
       "1618330432a371b93b",
       "1525295772132",
       "161934060891de6c34",
@@ -1374,7 +1569,8 @@
       "162340964014286dd1",
       "1618082935e0f46fa8",
       "1618298158a30ae3e7",
-      "1618434431426f981f"
+      "1618434431426f981f",
+      "161824111578f03b50"
     ]
   },
   "presets": {

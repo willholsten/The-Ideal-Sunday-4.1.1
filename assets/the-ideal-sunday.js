@@ -23,6 +23,17 @@ document.addEventListener('page:loaded', function () {
   //   $('#PredictiveWrapper').hide();
   // });
 
+
+  $('.clearpay-button').click(function () {
+    $('#clearpay-popup-wrapper').show();
+  });
+
+  $('.clearpay-close').click(function () {
+    $('#clearpay-popup-wrapper').hide();
+  });
+ 
+ myFunction($('#my_div'));
+
   $('.desktop-menu-icon').click(function () {
     $(this).toggleClass('is-active');
     $('#nav-icon3').toggleClass('open');
@@ -33,13 +44,13 @@ document.addEventListener('page:loaded', function () {
     $('.header-item--search-bar').toggleClass('is-active');
   });
 
-  $('#st-description_0-0').append("<span class='product-read-more yellow-strike'>Read More</span>");
+  $('#st-product-description_0-0').append("<span class='product-read-more yellow-strike'>Read More</span>");
 
   $('.product-read-more').click(function () {
     $(this).text(function (i, text) {
       return text === 'Read More' ? 'Read Less' : 'Read More';
     });
-    $('#st-description_0-0').toggleClass('open');
+    $('#st-product-description_0-0').toggleClass('open');
   });
 
   var mouse_is_inside = false;
@@ -85,6 +96,10 @@ $(document).ready(function()
       1000
     );
   });
+
+
+  // window.KlarnaOnsiteService = window.KlarnaOnsiteService || [];
+  // window.KlarnaOnsiteService.push({ eventName: 'refresh-placements' });
 
   // Bundle & Save Modal
   // $('#shopify-section-collection-promotions').addClass('js-modal-open-bundle-save');
@@ -157,5 +172,7 @@ $(document).ready(function()
   //       $('#HeaderWrapper').css('padding-bottom', scrollPos);
   //     }
   // });
+
+  
 });
 

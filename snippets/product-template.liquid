@@ -79,7 +79,7 @@
           </div>
         {%- endif -%}
 
-        <div class="grid__item {{ product_description_width }}">
+        <div class="grid__item product-single__sticky {{ product_description_width }}">
 
           <div class="product-single__meta">
             {%- if settings.show_breadcrumbs and isModal != true -%}
@@ -246,8 +246,6 @@
 
             <!-- <div class="product-short-description">{{ description_base }}</div> -->
 
-            <hr class="hr--medium">
-
             {%- unless isModal -%}
               {% comment %}
                 Shopify's product form attaches a number of tracking
@@ -259,9 +257,31 @@
                 product: product,
                 current_variant: current_variant
               -%}
+              
+              <div class="buy-now-pay-later">
+                <h3>Checkout today. Interest free.</h3>
+                <!-- <klarna-placement
+                  data-key="credit-promotion-badge"
+                  data-locale="en-GB"
+                  data-purchase-amount="{{ current_variant.price }}"
+                ></klarna-placement> -->
+                <div class="klarna">
+                  <img src="{{ 'tis-icon-klarna-2.svg' | asset_url }}" alt="Pay with Klarna - interest-free">
+                  <p onclick="kmerchant.openHostedInterstitial({ url: 'https://eu-assets.klarnaservices.com/learn-more/index.html?showButtons=true&amp;showBackground=false#eyJ0aWVySWQiOjc4NTA5NCwibGFuZ3VhZ2UiOiJFTiIsImNvdW50cnkiOiJHQiIsInB1cmNoYXNlQW1vdW50Ijo2NTAsImlzVGhyZXNob2xkIjp0cnVlLCJwYXltZW50TWV0aG9kSWQiOjksInRyYWNrZXJQYXJhbWV0ZXJzIjp7ImEiOiI4NjQ2NzAxZC1iNzJjLTNhNzYtODMwNi1kMjcxZjE3NmZmMzUiLCJiIjoiWEhpOUtpVHFrSGU0STFRSEhSSnVCIiwiZiI6IjM2IiwiaCI6IkVOIiwiaSI6IkdCIiwiaiI6ImEyMzAwMjk0LTU0MDMtNDRjNi1hYTE1LTNjZmZkYzkyOWYwNiIsImsiOiIxMDNkZjllNS0zODkzLTQyYjktOGM2NS02YmM5OGRhNTM2NzciLCJsIjoiMTgzMyIsIm4iOiJ0aGVpZGVhbHN1bmRheS5jb20iLCJzIjoiMTAwMSIsImQiOiJjcmVkaXQtcHJvbW90aW9uLWJhZGdlIiwiZyI6IjIxN2NiOTkwLWFiYzAtNTA5Zi1hNjJkLWU0ZDk2NWU2ZWRhYSIsImFhIjo2NTB9LCJ0aWVySGFzaCI6ImRjNDY0MmVhNzE2MWI0Y2FlY2M4YTUwMzBjNzRmZWQ0ZjQwMjIwYTA5YTUxZmQwZTQ2MzY4NzM0NDllOTNhNWUifQ==' }, arguments, undefined, this)"
+                  >Pay in 3 instalments of £{{ product.price | divided_by: 100.00 | divided_by: 3 | round: 2 }}. Min spend £35.</p>
+                  <!-- <div class="clearpay-inner"></div> -->
+                </div>  
+                <div class="clearpay">
+                  <img src="{{ 'tis-icon-clearpay-4.svg' | asset_url }}" alt="Pay with Clearpay - interest-free">
+                  <p class="clearpay-button">Pay in 4 instalments of £{{ product.price | divided_by: 100.00 | divided_by: 4 | round: 2 }}.</p>
+                  <!-- <div class="clearpay-inner"></div> -->
+                </div>  
+              </div>
+              
+              <hr class="hr--medium">
+
               {%- render 'the-ideal-sunday-delivery-rewards', current_variant: current_variant -%}
               
-              <!-- {%- render 'the-ideal-sunday-bundle-save' -%} -->
             {%- else -%}
               <div
                 id="ProductFormHolder-{{ section_id }}"
@@ -303,7 +323,7 @@
               </div>
             {%- endif -%}
 
-            {%- render 'the-ideal-sunday-product-values' -%}
+            
 
             {%- unless description_style == 'full' -%}
               
@@ -342,8 +362,8 @@
     {%- if description_style == 'full' -%}
       <div class="station-tabs-wrapper">
         <div class="page-width product-values-description-wrapper">
-            {%- render 'the-ideal-sunday-product-values' -%}
           <div class="product-single__description-full rte" data-station-tabs-app>
+            {%- render 'the-ideal-sunday-product-values' -%}
             {{ description_tabs }}
           </div>
         </div>

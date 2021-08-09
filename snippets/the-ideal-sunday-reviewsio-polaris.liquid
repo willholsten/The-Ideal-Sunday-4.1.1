@@ -1,10 +1,7 @@
 <script src="https://widget.reviews.co.uk/polaris/build.js"></script>
 
 <div class="index-section product-reviews-wrapper">
-    <div id="product-reviews" class="page-width">
-        <header class="section-header">
-            <h3 class="section-header__title">Customer Reviews</h3>
-        </header>
+    <div id="product-reviews">
         <div id="ReviewsWidget"></div>
     </div>
 </div>
@@ -71,6 +68,7 @@
                 enable_reviewer_recommends: true, //Show "I recommend it" badge
                 enable_attributes: true, //Show author attributes
                 enable_product_name: true, //Show display product name
+                enable_review_title: true, //Show review title
                 enable_images: true, //Show display review photos
                 enable_ratings: true, //Show product attributes (additional ratings)
                 enable_share: false, //Show share buttons
@@ -78,7 +76,7 @@
                 enable_helpful_display: false, //Show how many times times review upvoted
                 enable_report: false, //Show report button
                 enable_date: true, //Show when review was published 
-            },
+            }, 
         },
         //Translation settings
         translations: {

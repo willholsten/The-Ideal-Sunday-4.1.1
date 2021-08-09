@@ -305,7 +305,7 @@
       "recent_products": "Recently Viewed"
     },
     "product": {
-      "stock_label": "Only {{ count }} available!",
+      "stock_label": "Low in stock - Only {{ count }} available!", 
       "sold_out": "Sold Out",
       "unavailable": "Unavailable",
       "quantity": "Quantity",

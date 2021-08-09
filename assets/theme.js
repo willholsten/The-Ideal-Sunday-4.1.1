@@ -3648,7 +3648,7 @@ lazySizesConfig.expFactor = 4;
     }
   
     function scrollHandler() {
-      if (window.scrollY > 37) {
+      if (window.scrollY > 60) {
         if (config.stickyActive) {
           return;
         }
@@ -4269,7 +4269,9 @@ lazySizesConfig.expFactor = 4;
                 ${image}
               </div>
               <div class="grid-product__meta">
+                <div class="grid-product__vendor">${product.vendor}</div>
                 <div class="grid-product__title">${product.title}</div>
+                <div class="grid-product__price"><div class="grid-product__link"><span class="money">£${(product.price/100).toFixed(2)}</span></div></div>
               </div>
             </a>
           </div>

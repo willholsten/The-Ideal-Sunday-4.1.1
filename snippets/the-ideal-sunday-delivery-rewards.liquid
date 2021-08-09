@@ -1,16 +1,16 @@
 <div class="delivery-wrapper {% unless current_variant.available %} hide{% endunless %}">
     <div>
-        <img src="{{ 'tis-icon-marker.svg' | asset_url }}" alt="Estimated Delivery">
+        <img src="{{ 'tis-icon-truck.svg' | asset_url }}" alt="Estimated Delivery">
         <div>
-            <p class="h3">Free UK delivery over £40</p>
-            <small>Want it next day? Order before 12pm and select 24 Hour Delivery.</small>
+            <p class="h3">Delivery just £2.95, free over £40</p>
+            <small>Want it sooner? Select 24hr delivery at checkout.</small>
         </div>
     </div>
     <div class="{% unless current_variant.available %} hide{% endunless %}">
-        <img src="{{ 'tis-icon-star.svg' | asset_url }}" alt="Free Delivery over £40">
+        <img src="{{ 'tis-icon-rocket.svg' | asset_url }}" alt="Free Delivery over £40">
         <div>
-            <p class="h3">Earn {{ product.price | divided_by: 100.00 | times: 5 | round }} Sunday Points</p>
-            <small>For every order, referral and more you can earn reward points to use for discounts on your next purchase! <a class="yellow-strike" href="#smile-home">Learn more</a></small>
+            <p class="h3">You could earn {{ product.price | divided_by: 100.00 | times: 5 | round }} Reward Points</p>
+            <small>For every order and referral you can earn reward points and discounts. <a class="yellow-strike" href="#smile-home">Sign Up!</a></small>
         </div>
     </div>
 </div>

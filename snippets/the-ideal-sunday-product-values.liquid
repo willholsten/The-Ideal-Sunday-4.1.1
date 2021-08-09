@@ -5,7 +5,7 @@
   {% assign compostable = product.tags | where: "Compostable" %}
   {% assign extra_tree = product.tags | where: "Extra Tree" %}
   {% assign handmade = product.tags | where: "Handmade" %}
-  {% assign natural = product.tags | where: "Natural" %}
+  {% assign natural = product.tags | where: "value_Natural" %}
   {% assign organic = product.tags | where: "Organic" %}
   {% assign recyclable = product.tags | where: "Recyclable" %}
   {% assign uk_made = product.tags | where: "UK Made" %}
@@ -18,11 +18,12 @@
     <div class="product-values-wrapper">
       <div class="product-values">
         {% for tag in values %}
-            {% assign tag-file = tag | downcase | replace: " ", "-" | prepend: "tis-icon-product-" | append: ".svg" %}
-            {% assign url = tag | downcase | replace: " ", "-" | prepend: "/collections/" | append: "-products" %}
+        {% assign tagName = tag | replace: "-", " " | remove: "value_" %}
+            {% assign tag-file = tag | downcase | replace: " ", "-" | remove: "value_" | prepend: "tis-icon-product-" | append: ".svg" %}
+            {% assign url = tag | downcase | replace: " ", "-" | remove: "value_" | prepend: "/collections/" | append: "-products" %}
               <a href="{{url}}">
                 <img src="{{ tag-file | asset_url }}" alt="{{tag}}" onError="style.display = 'none';">
-                <span>{{tag}}</span>
+                <span>{{tagName}}</span>
               </a>
         {% endfor %}
       </div>

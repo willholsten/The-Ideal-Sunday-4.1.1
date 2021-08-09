@@ -1,4 +1,5 @@
-<div class="page-width">
+<div class="page-width page-width--flush-small">
+  
   {%- if section.settings.title != blank -%}
     <div class="section-header">
       <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
@@ -6,7 +7,8 @@
   {%- endif -%}
 
   {%- if section.blocks.size > 0 -%}
-    <div class="logo-bar logo-bar--{{ section.id }} logo-slider">
+  <div class="grid-overflow-wrapper">
+    <div class="logo-bar logo-bar--{{ section.id }} product-values-slider">
       {%- for block in section.blocks -%}
         <div class="logo-bar__item" {{ block.shopify_attributes }}>
           {%- if block.settings.link != blank -%}
@@ -18,13 +20,18 @@
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <span>{{ block.settings.text }}</span>
+          {%- endif -%}
           {%- if block.settings.link != blank -%}
             </a>
-          {%- endif -%}
+          {%- endif -%} 
         </div>
       {%- endfor -%}
     </div>
+  </div>
   {%- endif -%}
+  
 </div>
 
 
@@ -145,6 +152,11 @@
             "zh-CN": "图片",
             "zh-TW": "圖片"
           }
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Product Value"
         },
         {
           "type": "url",

@@ -166,9 +166,7 @@
                                                     {% endif %}
                                                 {% endif %}
 
-                                                {%- comment -%}
                                                 {%- render 'the-ideal-sunday-product-review-stars', sku: variant.sku -%}
-                                                {%- endcomment -%}
 
                                             </div>
                                             {% if settings.enable_product_reviews %}
@@ -377,9 +375,8 @@
                                     {%- endif -%}
                                 {% endfor %}
                             {%- endcapture -%}
-                            {%- comment -%}
+
                             {%- render 'the-ideal-sunday-product-review-stars', sku: variant_skus -%}
-                            {%- endcomment -%}
 
                         </div>
                         {% if settings.enable_product_reviews %}
@@ -575,13 +572,10 @@
                         {%- capture variant_skus -%}
                             {%- for variant in product.variants -%}
                                 {{- variant.sku -}}
-                                {%- if forloop.last == false -%};
-                                {%- endif -%}
                             {% endfor %}
                         {%- endcapture -%}
-                        {%- comment -%}
+                        
                         {%- render 'the-ideal-sunday-product-review-stars', sku: variant_skus -%}
-                        {%- endcomment -%}
 
                     </div>
                     {% if settings.enable_product_reviews %}

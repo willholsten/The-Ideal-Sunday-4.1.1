@@ -19,6 +19,8 @@
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.gstatic.com">
+  <script src="https://widget.reviews.co.uk/product/dist.js"></script>
+  <script src="https://widget.reviews.co.uk/rating-snippet/dist.js"></script>
 
   {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
@@ -99,6 +101,7 @@
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-center-text="{{ settings.type_body_align_text }}" data-button_style="{{ settings.button_style }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-type_headers_align_text="{{ settings.type_headers_align_text }}" data-type_product_capitalize="{{ settings.type_product_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" {% if settings.disable_animations %}data-disable-animations="true"{% endif %}>
+  <script async src="https://eu-library.klarnaservices.com/lib.js" data-client-id="217cb990-abc0-509f-a62d-e4d965e6edaa"></script>
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
@@ -115,6 +118,7 @@
     </main>
 
       {%- section 'footer-promotions' -%}
+      {%- section 'the-ideal-sunday-instagram' -%}
       {%- section 'the-ideal-sunday-company-values-footer' -%}
       {%- section 'footer' -%}
 
@@ -139,9 +143,10 @@
     render 'photoswipe-template'
   -%}
   
-  {%- render 'the-ideal-sunday-bundle-save-modal' -%}
   {% render 'flits_snippet' %}
   {% render 'smile-initializer' %}
-  <script type='text/javascript' async src='https://spcdn.incartupsell.com/idhch-5hfuy57MSp6zjUmpyF7y.js'></script>
+  {% include 'social-head-common.liquid' %}
+  {% render 'the-ideal-sunday-clearpay-pop-up' %}
+
 </body>
 </html>
