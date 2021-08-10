@@ -1,0 +1,41 @@
+:root {
+    --colorHeader: #1E1E95;
+    --colorPink: #fd4b7f;
+    --colorLightBlue: #E5F7FF;
+    --colorYellow: #FFEE6E;
+    --colorLightYellow: #FFF9D8;
+    --colorLightBlueLighter: #F6FBFD;
+    --colorLightPink: #ffecf2; 
+    --colorLightBeige: #FFFAF4;
+  
+    --borderRadius: 5px;
+    --buttonBorderRadius: 5px
+  }
+
+@import 'common.scss';
+@import 'header.scss';
+@import 'navigation.scss';
+@import 'homepage.scss';
+@import 'collection.scss';
+@import 'product.scss';
+@import 'blogs.scss';
+@import 'problogger.scss';
+@import 'reviews-io.scss';
+@import 'cart-upsell.scss'; 
+@import 'custom-components.scss'; 
+@import 'omnisend.scss';  
+@import 'clearpay-klarna.scss';  
+@import 'plastic-free-july.scss';  
+@import 'footer.scss'; 
+
+/***** FLITS *****/
+#CustomerLoginForm,
+#create_customer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-main-slide.is-selected .flits-wishlist-product-page {
+  opacity: 1 !important;
+}
+

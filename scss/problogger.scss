@@ -1,0 +1,160 @@
+/*************************************************************************
+
+APP: RELATED BLOG POSTS
+
+*************************************************************************/
+.product-page-related-articles {
+    background-color: var(--colorLightBlue);
+  }
+  .product-page-related-articles .pb-text-wrapper {
+    background-color: #fff;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+    padding: 15px;
+    margin-top: 0;
+  }
+  
+  .product-page-related-articles .owl-item {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  
+  .product-page-related-articles h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  @media only screen and (min-width:769px){
+    .product-page-related-articles h2 {
+      margin-bottom: 50px;
+    }
+  }
+  
+  #related_product_articles_header {
+    text-align: left;
+    padding-top: 40px;
+  }
+  
+  @media only screen and (min-width:769px){
+    #related_product_articles_header {
+      padding-top: 75px;
+    }
+  }
+  
+  #related_product_articles_slider {
+    padding-bottom: 40px;
+    margin-bottom: 0 !important;
+  }
+  
+  @media only screen and (min-width:769px){
+    #related_product_articles_slider {
+      padding-bottom: 75px;
+    }
+  }
+  
+  .pb_image_wrapper img {
+    background-color: #f6f6f6;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  }
+  
+  #related_product_articles_slider .pb_image_wrapper:after {
+    margin-top: 15px;
+  }
+  
+  #related_product_articles_slider .pb_image_wrapper:after {
+    padding-bottom: 65%;
+  }
+  
+  #related_product_articles_slider .pb-text-title {
+    text-align: left;
+  }
+  
+  #related_product_articles_slider .pb-text-title-header {
+    font-size: var(--typeBaseSize) !important;
+  }
+   
+  #related_product_articles_slider .pb-text-title a {
+    text-transform: capitalize !important;
+    font-weight: var(--typeHeaderWeight) !important;
+    color: var(--colorHeader) !important;
+    letter-spacing: var(--typeBaseSpacing) !important;
+    font-size: 1.2em !important;
+  }
+  
+  .article-related-products {
+    padding-top: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--colorBorder);
+  }
+  
+  .article-related-products #related_products_header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  @media only screen and (min-width:769px){
+    .article-related-products #related_products_header {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .article-related-products .pb-text-title-header,
+  .article-related-products .pb-text-price {
+    text-align: left;
+  }
+  
+  .article-related-products .pb-text-vendor {
+    text-transform: uppercase;
+  }
+  
+  .article-related-products .pb-text-title-header a {
+    text-transform: capitalize !important;
+    font-weight: var(--typeHeaderWeight) !important;
+    color: var(--colorTextBody) !important;
+    font-size: calc(var(--typeBaseSize)*.9) !important;
+    letter-spacing: var(--typeBaseSpacing) !important;
+  }
+  
+  @media only screen and (min-width:769px){
+    .article-related-products .pb-text-title-header a {
+      font-size: var(--typeBaseSize) !important;
+    }
+  }
+  
+  .zestard-productlist .thumbnail.item h4 a {
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: var(--colorTextBody);
+    font-size: calc(var(--typeBaseSize)*.85);
+    letter-spacing: var(--typeBaseSpacing);
+  }
+  
+  .zestard-bloglist .blog_page_title {
+    font-size: calc(var(--typeHeaderSize)*0.73);
+  }
+  
+  @media only screen and (min-width:769px){
+    .zestard-bloglist .blog_page_title {
+      font-size: calc(var(--typeHeaderSize)*0.85);
+    }
+  }
+  
+  .zestard-bloglist .thumbnail.item h4 a {
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: var(--colorTextBody);
+    font-size: calc(var(--typeBaseSize)*.85);
+    letter-spacing: var(--typeBaseSpacing);
+  }
+  
+  @media only screen and (min-width:769px){
+    .zestard-bloglist .thumbnail.item h4 a {
+      font-size: var(--typeBaseSize);
+    }
+  }
+  
+  .zestard-bloglist p {
+    display: none;
+  }

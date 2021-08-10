@@ -1,0 +1,286 @@
+/*************************************************************************
+
+PAGE: COLLECTION PAGE
+
+*************************************************************************/
+
+.collection-content {
+    padding-top: 25px;
+    padding-bottom: 75px;
+  }
+  
+  /***** PROMOTION BAR *****/
+  #shopify-section-collection-promotions p {
+    line-height: 1.6;
+  }
+  
+  /***** FILTERS *****/
+  .tag-list a {
+    font-size: max(calc(var(--typeBaseSize) - 2px), 14px);
+  }
+  .tag--active>a {
+    font-weight: 700;
+  }
+    
+  @media only screen and (max-width:768px) {
+    .collection-filter{
+      background-color: #fff;
+      padding-top: 15px;
+    }
+  }
+  
+  .collection-sidebar__group .color-swatch:before {
+    border-color: transparent;
+  }
+  
+  #CollectionSidebar-2 {
+    font-size: max(calc(var(--typeBaseSize) - 2px), 14px);
+  }
+  
+  .collection-filter {
+    position: relative;
+    top: 0 !important;
+  }
+  
+  /***** COLLECTION DESCRIPTION *****/
+  .collection-description {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-button-container {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.4) 7%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0.8) 45%, #fff 70%);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .collection-description-closed {
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .collection-description-closed.open {
+    max-height: 1500px;
+    padding-bottom: 45px;
+  }
+  
+  .collection-description p {
+    margin-bottom: 10px;
+  }
+  
+  .collection-description .btn {
+    background-color: #fff;
+  }
+  
+  .promo-grid__container--tint:before {
+    border-radius: var(--borderRadius);
+  }
+   
+  /***** SUB COLLECTIONS *****/
+  .subcollections-wrapper .grid__item {
+    width: auto;
+    clear: none;
+  }
+  
+  .subcollections-wrapper .image-wrap {
+    display: none;
+  }
+  
+  .subcollections-wrapper .collection-item {
+    margin-bottom: 0;
+    padding: 8px 15px;
+    border: 1px solid var(--colorBorder);
+    border-radius: var(--borderRadius);
+    margin-right: 10px;
+    transition: all .5s;
+  }
+  
+  .subcollections-wrapper .collection-item:hover {
+    border: 1px solid var(--colorTextBody);
+  }
+  
+  .subcollections-wrapper .collection-item .collection-item__title {
+    margin-top: 0;
+    font-size: var(--typeBaseSize);
+  }
+  
+  .subcollections-wrapper .collection-item--overlaid-box::after {
+    background-color: transparent;
+  }
+  
+  .subcollections-wrapper .collection-item--overlaid-box .image-wrap .collection-image {
+    display: none;
+  }
+  
+  .subcollections-wrapper .collection-item--overlaid-box .collection-item__title {
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .sub-collection-overlay {
+    position: relative;
+    height: 44px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .sub-collection-overlay {
+      height: 44px;
+    }
+  }
+  .sub-collection-overlay:after {
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,1) 100%);
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 45px;
+    z-index: 10;
+    pointer-events: none;
+    content: "";
+  }
+  
+  /***** Hide scrollbar for Chrome, Safari and Opera *****/
+  .sub-collections::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /***** Hide scrollbar for IE, Edge and Firefox *****/
+  .sub-collections {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  
+  .sub-collections {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    max-width: 100%;
+    height: 50px;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .sub-collections {
+      justify-content: flex-start;
+    }
+  }
+  
+  .sub-collections .grid__item:last-of-type {
+    padding-right: 25px;
+  }
+  
+  .sub-collections .collection-item__title span {
+    white-space: nowrap;
+  }
+  
+  /***** QUICK VIEW *****/
+  .modal--quick-shop .product-single__sticky {
+    top: 0;
+  }
+  
+  .modal--quick-shop .station-tabs-wrapper {
+    display: none;
+  }
+  
+  .modal--quick-shop [data-station-tabs-app],
+  .modal--quick-shop .product-favourite-features { 
+    display: none;
+  }
+  
+  .modal--square .modal__inner {
+    border-radius: var(--borderRadius);
+  }
+  
+  /***** COLLECTION GRID *****/
+  .product-sold-out {
+    opacity: 0.5;
+  }
+  
+  .grid-product__meta {
+    line-height: 1.6;
+  }
+  
+  .grid-product__title {
+    min-height: 48px;
+    /* font-weight: var(--typeHeaderWeight); */
+    word-break: normal;
+    -webkit-hyphens: none;
+  
+  }
+  
+  .color-swatch--small {
+    width: 19px;
+    height: 19px;
+  }
+  
+  [data-swatch_style=round] .color-swatch--small:before {
+    border-width: 2px;
+    border-color: transparent;
+  }
+  
+  .grid-product__vendor {
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+  }
+  
+  .grid-product__price .grid-product__link {
+    margin-right: 5px;
+    font-weight: 700;
+  }
+  
+  .grid-product__price {
+    display: flex;
+    align-items: center;
+    font-size: var(--typeBaseSize);
+  }
+  
+  @media only screen and (max-width:768px){
+    .grid-product__meta,
+    .grid-product__price {
+      font-size: calc(var(--typeBaseSize) * 0.9);
+    }
+    /* .grid-product__content .ruk-rating-snippet-count {
+      display: none;
+    } */
+  }
+  
+  @media only screen and (min-width:769px){
+    .grid-product__price .grid-product__link {
+      margin-right: 10px;
+    }
+  }
+  
+  .grid-product__colors .color-swatch {
+    box-shadow: none;
+  }
+  
+  /***** CUSTOM TAGS *****/
+  .grid-product__tag {
+    top: 10px;
+    left: 10px;
+    right: unset;
+    border-radius: 5px;
+    font-size: calc(var(--typeBaseSize) * 0.8);
+    background-color: #fff;
+    color: var(--colorTextBody);
+    font-weight: var(--typeHeaderWeight);
+  }
+  
+  /***** PAGINATION *****/
+  .pagination .next,
+  .pagination .prev {
+    border-radius: var(--buttonRadius); 
+  }

@@ -1,0 +1,97 @@
+
+/*************************************************************************
+
+FOOTER
+
+*************************************************************************/
+
+/***** FOOTER *****/ 
+.site-footer {
+    padding-bottom: 10px;
+  }
+  
+  .site-footer .footer__collapsible{
+    font-size:calc(var(--typeBaseSize)*0.9);
+  }
+  
+  @media only screen and (min-width:769px){
+    .site-footer .footer__collapsible, .site-footer input,.site-footer select,.site-footer textarea{
+      font-size:var(--typeBaseSize);
+    }
+  }
+  
+  @media only screen and (min-width:769px){
+    .site-footer .grid__item {
+      padding-top: 15px;
+    }
+  
+    .site-footer .grid__item[data-type="newsletter"] {
+      padding: 15px;
+      background-color: rgba(255,255,255,.1);
+      border-radius: var(--borderRadius);
+    }
+  }
+  
+  .site-footer .grid__item[data-type="newsletter"] .footer__item-padding {
+    padding-right: 0;
+  }
+  
+  .site-footer .grid__item[data-type=newsletter] input {
+    background: #fff;
+    border-radius: var(--borderRadius);
+    padding: 10px 20px;
+    border: 0;
+    color: var(--colorTextBody);
+  }
+  
+  .site-footer .grid__item[data-type=newsletter] input::placeholder {
+    color: var(--colorTextBody);
+  }
+  
+  .footer__newsletter-btn {
+    color: var(--colorTextBody);
+  }
+  
+  .site-footer .grid > .grid__item:last-of-type .image-wrap {
+    background: transparent;
+    max-width: 200px;
+  }
+  
+  .site-footer .grid__item[data-type=newsletter] .footer__newsletter-btn {
+    top: 45%;
+    right: 10px;
+  }
+  
+  .footer__title {
+    font-family: var(--typeBasePrimary);
+    font-size: calc(var(--typeHeaderSize) * 0.35);
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0;
+  }
+  
+  .footer-badges {
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+  }
+  
+  .footer-badges #badge-120,
+  .ecologi-wrapper {
+    margin-right: 25px;
+  }
+  
+  .ecologi-wrapper {
+    padding: 15px;
+    border-radius: var(--borderRadius);
+    background-color: #3D4094;
+    margin-right: 35px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-badges img {
+    border-radius: 0;
+  }

@@ -1,0 +1,212 @@
+/*************************************************************************
+
+CUSTOM COMPONENTS
+
+*************************************************************************/
+
+/***** The Ideal Sunday - Full Image with Text *****/
+.the-ideal-sunday-full-image-with-text .feature-row {
+    margin: 0;
+    align-items: initial; 
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text {
+    text-align: left;
+    padding: 60px 17px;
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row .feature-row__image-container {
+    position: relative;
+    min-height: 300px;
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text .h3:first-of-type {
+    margin-bottom: 55px;
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text .h3:last-of-type {
+    font-size: calc(var(--typeHeaderSize)*0.4);
+    margin-bottom: 30px;
+  }
+  
+  .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text .featured-row__subtext {
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (min-width:769px){
+    .the-ideal-sunday-full-image-with-text .feature-row .feature-row__image-container {
+      min-width: 60%;
+    }
+  
+    .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text {
+      display: flex;
+      align-items: center;
+      min-width: 40%;
+      padding: 100px;
+    }
+  
+    .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text .h2 {
+      margin-bottom: 50px;
+      max-width: 450px;
+    }
+  
+    .the-ideal-sunday-full-image-with-text .feature-row .feature-row__text .featured-row__subtext {
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+  }
+  
+  /***** The ideal Sunday - Company Values *****/
+  
+  .company-values-inner {
+    margin: 0;
+    padding: 40px 0;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .company-values-inner {
+      padding: 100px 0;
+    }
+  }
+  
+  .company-values .section--divider {
+    border: none;
+  }
+  
+  .company-values .h3 {
+    display: inline-block;
+    font-family: var(--typeHeaderPrimary);
+    font-size: calc(var(--typeHeaderSize) * 0.5);
+    margin-bottom: 10px;
+  }
+  
+  .company-values .grid__item {
+    text-align: center;
+  }
+  
+  .company-values .grid__item .text-spacing {
+    padding: 0 25px;
+  }
+  
+  .company-values .grid__item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .company-values .grid__item .article__grid-image {
+    margin-right: 20px;
+  }
+  
+  .company-values .grid__item .text-spacing {
+    padding: 0;
+  }
+  
+  .company-values .grid__item img {
+    display: none;
+  }
+  
+  .company-values .grid__item .image-wrap {
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+  
+  .company-values .grid__item:first-of-type .image-wrap {
+    background-image:url("tis-icon-ethical-brands.svg"); 
+  }
+  
+  .company-values .grid__item:nth-child(2) .image-wrap {
+    background-image:url("tis-icon-shopping-bag.svg"); 
+  }
+  
+  .company-values .grid__item:nth-child(3) .image-wrap {
+    background-image:url("tis-icon-trees.svg"); 
+  }
+  
+  /***** The Ideal Sunday - Intro Text *****/
+  
+  .the-ideal-sunday-intro-text {
+    padding: 75px 0 25px;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .the-ideal-sunday-intro-text {
+      padding: 100px 0 50px;
+    }
+  }
+  
+  .the-ideal-sunday-intro-text .h6 {
+    font-family: var(--typeBasePrimary);
+    color: var(--colorPink);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .the-ideal-sunday-intro-text .h2 {
+    font-size: calc(var(--typeHeaderSize)*.8);
+    margin: 0 auto 50px;
+    line-height: 1.4;
+    max-width: 750px;
+  }
+  
+  .the-ideal-sunday-intro-text p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /***** The Ideal Sunday - Floating Image with Text *****/
+  
+  .the-ideal-sunday-full-image-with-text.the-ideal-sunday-floating-image-with-text .image-wrap-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 50px 0;
+    max-width: 90%;
+  }
+  
+  .the-ideal-sunday-full-image-with-text.the-ideal-sunday-floating-image-with-text .image-wrap {
+    overflow: visible;
+    background: transparent;
+  }
+  
+  .the-ideal-sunday-full-image-with-text.the-ideal-sunday-floating-image-with-text .feature-row__image {
+    position: absolute;
+    object-fit: contain;
+    border-radius: 0;
+    margin: 0 auto;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .the-ideal-sunday-full-image-with-text.the-ideal-sunday-floating-image-with-text .h6 {
+    font-family: var(--typeBasePrimary);
+    color: var(--colorPink);
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  
+  #shopify-section-recently-viewed .index-section {
+    margin-bottom: 0;
+  }
+  
+  /***** The Ideal Sunday - Background Image with Text Box *****/
+  .background-media-text img {
+    border-radius: 0; 
+  }

@@ -1,0 +1,86 @@
+/***** Clearpay + Klarna *****/
+.buy-now-pay-later {
+    margin-top: 20px;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .buy-now-pay-later {
+      padding: 14px;
+    }
+  }
+  
+  .buy-now-pay-later h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .clearpay,
+  .klarna {
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .klarna button,
+  .clearpay button {
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+  }
+  
+  .klarna button img,
+  .clearpay button img {
+    fill: #6e6e6e;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    max-width: 20px;
+  }
+  
+  .klarna p:hover,
+  .clearpay p:hover {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .clearpay img,
+  .klarna img {
+    margin-right: 5px;
+    max-width: 50px;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .clearpay img,
+    .klarna img {
+      margin-right: 14px; 
+    }
+  }
+  
+  .clearpay p,
+  .klarna p,
+  .klarna button,
+  .clearpay button {
+    margin-bottom: 0;
+    -webkit-font-smoothing: auto;
+  }
+  
+  .klarna {
+    margin: 15px 0;
+  }
+  
+  .clearpay-link {
+    color: #6e6e6e;
+  }
+  
+  .clearpay-link:hover {
+    color: #000;
+  }
+  
+  .container .text-wrapper .text {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+  }

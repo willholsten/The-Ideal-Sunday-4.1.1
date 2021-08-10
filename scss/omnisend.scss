@@ -1,0 +1,143 @@
+/*************************************************************************
+**********************************************************************
+**********************************************************************
+
+APP: OMNISEND POP UP
+
+**********************************************************************
+**********************************************************************
+*************************************************************************/
+
+.soundest-form-simple-spacer {
+    position: relative;
+    max-width: 400px;
+    padding-bottom: 20px;
+  }
+  .soundest-form-simple-wrapper {
+    max-width: 400px;
+    margin: auto;
+  }
+  #omnisend-dynamic-container .soundest-form-simple-content {
+    padding: 0;
+  }
+  #omnisend-dynamic-container .soundest-form-simple-close-holder {
+    position: absolute;
+    right: 12px;
+    z-index: 9;
+    margin-top: 10px;
+  }
+  #omnisend-dynamic-container .soundest-form-simple-close-holder .soundest-form-simple-close {
+    border-color: transparent;
+  }
+  #omnisend-dynamic-container .soundest-form-simple-close-holder .soundest-form-simple-close::before,
+  #omnisend-dynamic-container .soundest-form-simple-close-holder .soundest-form-simple-close::after { 
+      background-color: var(--colorTextBody);
+      width: 15px;
+      height: 2px;
+      left: 10px;
+  }
+  #omnisend-dynamic-container .soundest-form-simple-content-outer {
+    border-radius: var(--borderRadius) !important;
+    overflow: hidden !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.25) !important;
+    padding: 15px;
+  } 
+  
+  #omnisend-dynamic-container .soundest-form-simple-headline {
+    color: var(--colorTextBody) !important;
+    font-family: var(--typeBasePrimary) !important;  
+    font-size: 18px !important;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: var(--typeHeaderWeight) !important;
+  }
+  
+  .soundest-form-simple-space {
+    display: none;
+  }
+    
+  #omnisend-dynamic-container .soundest-form-simple-second-headline {
+    font-family: var(--typeBasePrimary) !important;
+    color: var(--colorTextBody) !important;
+    font-weight: var(--typeBaseWeight) !important;
+    font-size: var(--typeBaseSize) !important;
+    text-align: left;
+    margin-bottom: 10px;
+    
+  }
+  #omnisend-dynamic-container .soundest-form-simple-content-outer .soundest-form-simple-field {
+    font-family: var(--typeBasePrimary);
+    background-color: #fff;
+    border-color: var(colorBorder);
+    color: var(--colorTextBody) !important;
+    border-radius: var(--buttonBorderRadius) !important;
+    font-weight: 300;
+  }
+  
+  #omnisend-dynamic-container .soundest-form-simple-content-outer .soundest-form-simple-field::placeholder {
+    color: var(--colorTextBody) !important;
+  }
+  
+  #omnisend-dynamic-container .soundest-form-simple-content-outer .soundest-form-simple-submit {
+    font-family: var(--typeBasePrimary) !important;
+    background-color: var(--colorBtnPrimary) !important;
+    color: var(--colorBtnPrimaryText) !important;
+    border-radius: var(--buttonBorderRadius) !important;
+    font-size: 15px;
+    font-weight: var(--typeHeaderWeight) !important;
+  }
+  .soundest-form-simple-submit:hover {
+    background-color: var(--colorBtnPrimary);
+  }
+  
+  .soundest-form-simple-headline.soundest-form-simple-state-success-subscribed p {
+    font-size: var(--typeBaseSize) !important;
+    font-weight: var(--typeBaseWeight) !important;
+    margin-top: 10px;
+  }
+  
+  @media only screen and (min-width:769px) {
+    .soundest-form-simple-overlay {
+      display: none !important;
+    }
+    .soundest-form-simple-outer {
+      right: 20px !important;
+      top: auto !important;
+      height: 274px !important;
+      bottom: 0;
+    }
+    .soundest-form-simple-close-holder {
+      right: 5px;
+      margin-top: 5px;
+    }
+    .soundest-form-simple-wrapper {
+      margin-right: 0;
+    }
+  }
+  
+  /***** Footer - Already Subscribed *****/
+  .soundest-form-without-image-state.soundest-form-without-image-state-success .soundest-form-without-image-headline.soundest-form-without-image-state-success-already-subscribed {
+    font-family: var(--typeBasePrimary) !important;
+    font-size:calc(var(--typeHeaderSize)*0.5) !important;
+    font-weight: var(--typeHeaderWeight) !important;
+  }
+  
+  /***** Footer - Success *****/
+  .soundest-form-without-image-content-outer {
+    border-radius: var(--borderRadius) !important;
+  }
+  
+  .soundest-form-without-image-state.soundest-form-without-image-state-success .soundest-form-without-image-headline.soundest-form-without-image-state-success-subscribed {
+    font-family: var(--typeBasePrimary) !important;
+    font-size:calc(var(--typeHeaderSize)*0.6) !important;
+    font-weight: var(--typeHeaderWeight) !important;
+  }
+  
+  .soundest-form-without-image-state.soundest-form-without-image-state-success .soundest-form-without-image-headline.soundest-form-without-image-state-success-subscribed p {
+    font-family: var(--typeBasePrimary) !important;
+    font-size: var(--typeBaseSize) !important;
+    font-weight: var(--typeBaseWeight) !important;
+    line-height: 22px;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+  }

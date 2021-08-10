@@ -1,0 +1,61 @@
+/*************************************************************************
+**********************************************************************
+**********************************************************************
+
+PLASTIC FREE JULY
+
+**********************************************************************
+**********************************************************************
+*************************************************************************/
+
+.pfj-product-page {
+    background-color: var(--colorLightBlue);
+    border-radius: var(--borderRadius);
+    padding: 10px 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .pfj-product-page p {
+    margin-bottom: 0; 
+  }
+  
+  .pfj-blog-page {
+    background-color: var(--colorLightPink);
+    border-radius: var(--borderRadius);
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  .pfj-blog-page-w2 {
+    background-color: #fff9d8;
+  }
+  
+  .pfj-blog-page h3 {
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+  }
+  
+  #shopify-section-article-template .page-content .pfj-blog-page h3,
+  #shopify-section-article-template .page-content .pfj-blog-page p,
+  #shopify-section-article-template .page-content .pfj-blog-page a {
+    text-align: center !important;
+  }
+  
+  .pfj-product-page a,
+  .pfj-blog-page a {
+    padding: 5px 10px;
+    background-color: #fcd2df;
+    border-radius: var(--buttonBorderRadius);
+    font-weight: var(--typeHeaderWeight);
+    border-bottom: none !important;
+  }
+  
+  .pfj-product-page a,
+  .pfj-blog-page-w2 a {
+    background-color: var(--colorYellow);
+  }
+  
+  .pfj-blog-page a:after {
+    display: none;
+  }

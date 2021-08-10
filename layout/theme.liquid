@@ -34,9 +34,13 @@
 
   {%- render 'social-meta-tags' -%}
 
-  {%- render 'font-face' -%}
+  {%- render 'font-face' -%} 
+  <link rel="stylesheet" href="https://assets.reviews.io/iconfont/reviewsio-icons/style.css?_t=2021072212">
+  <link rel="stylesheet" href="https://assets.reviews.io/css/widgets/carousel-widget.css?_t=2021072212"> 
   {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'global.css' | asset_url | stylesheet_tag }}
   {%- render 'css-variables' -%}
+
 
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');

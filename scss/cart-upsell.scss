@@ -1,0 +1,100 @@
+/*************************************************************************
+
+APP: CART UPSELL (PLANT A TREE)
+
+*************************************************************************/
+#nudge-offer-121485 {
+    margin: 0;
+    width: 100%;
+    padding: 10px 15px !important;
+    background-color: #fff !important;
+    border-top: 1px solid var(--colorDrawerBorder);
+    border-radius: 0 !important;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    #nudge-offer-121485 {
+      padding: 10px 30px !important;
+    }
+  }
+  
+  #nudge-offer-121485 > div:last-of-type {
+    display: none !important;
+  }
+  
+  #nudge-offer-121485.multi.compact .product-image-wrapper {
+    width: 80px;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    #nudge-offer-121485.multi.compact .product-image-wrapper {
+      width: 100px;
+    }
+  }
+  
+  #nudge-offer-121485 img {
+    width: 60px !important;
+    padding-right: 0 !important;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    #nudge-offer-121485 img {
+      width: 80px !important;
+    }
+  }
+  
+  .nudge-wrapper {
+    position: relative;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  #nudge-offer-121485.multi .offer-text {
+    padding-left: 0 !important;
+    font-family: var(--typeBasePrimary),var(--typeBaseFallback);
+    font-size: var(--typeBaseSize) !important;
+    color: var(--colorTextBody);
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+    font-weight: var(--typeBaseWeight);
+  }
+  
+  #nudge-offer-121485 .product-price-wrapper {
+    font-family: var(--typeBasePrimary),var(--typeBaseFallback);
+    font-size: var(--typeBaseSize) !important;
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+    color: var(--colorTextBody);
+    font-weight: var(--typeBaseWeight);
+  }
+  
+  #nudge-offer-121485 .product-title-wrapper {
+    margin-bottom: 0 !important;
+  }
+  
+  
+  #nudge-offer-121485.multi form {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  
+  #nudge-offer-121485.multi form input.bttn {
+    border-radius: var(--buttonBorderRadius);
+    background-color: var(--colorYellow);
+    color: var(--colorTextBody);
+    font-family: var(--typeBasePrimary),var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize)*0.85) !important;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    line-height: var(--typeBaseLineHeight);
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 5px 10px;
+  }
+  
+  #nudge-offer-121485.multi form input.bttn:hover {
+    opacity: 0.8;
+  }
