@@ -3648,7 +3648,7 @@ lazySizesConfig.expFactor = 4;
     }
   
     function scrollHandler() {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 38) {
         if (config.stickyActive) {
           return;
         }

@@ -13,16 +13,6 @@ document.addEventListener('page:loaded', function () {
     $('.collection-description-closed').toggleClass('open');
   });
 
-  $('.site-header__search-container').click(function () {
-    $(this).addClass('is-active');
-    $('#PredictiveWrapper').show();
-  });
-
-  // $('#SearchClose').click(function () {
-  //   $('.site-header__search-container').removeClass('is-active');
-  //   $('#PredictiveWrapper').hide();
-  // });
-
 
   $('.clearpay-button').click(function () {
     $('#clearpay-popup-wrapper').show();
@@ -30,18 +20,6 @@ document.addEventListener('page:loaded', function () {
 
   $('.clearpay-close').click(function () {
     $('#clearpay-popup-wrapper').hide();
-  });
- 
- myFunction($('#my_div'));
-
-  $('.desktop-menu-icon').click(function () {
-    $(this).toggleClass('is-active');
-    $('#nav-icon3').toggleClass('open');
-    $('.header-item--navigation').toggleClass('is-active');
-  });
-
-  $('.search-icon').click(function () {
-    $('.header-item--search-bar').toggleClass('is-active');
   });
 
   $('#st-product-description_0-0').append("<span class='product-read-more yellow-strike'>Read More</span>");

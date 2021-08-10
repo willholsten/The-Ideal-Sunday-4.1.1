@@ -11305,8 +11305,8 @@ HEADER
     box-shadow: 0 0 1px rgba(0,0,0,0.2);
   }
 
-  .header-wrapper {
-    padding-bottom: 55px;
+  .header-item-burger {
+    max-width: 63px;
   }
 
 /***** Menu Icon (Left)*****/ 
@@ -11390,6 +11390,10 @@ HEADER
   }
 
   /***** Search *****/ 
+  .site-header__search .page-width {
+    align-items: center;
+  }
+
   .site-header__search-btn {
     display: flex;
     align-items: center;
@@ -11627,23 +11631,12 @@ HEADER
 
 
   /***** Navigation *****/
-  .site-navigation {
-    margin-top: 5px;
-  }
   .site-header--stuck .megamenu {
     border-radius: var(--borderRadius);
-  }
-  .site-navigation > .site-nav__item:first-of-type > .site-nav__link {
-    padding-left: 0;
   }
 
   .site-navigation > .site-nav__item:first-of-type > .site-nav__link:after {
     margin-left: 0;
-  }
-
-  .site-header--stuck .header-item--navigation {
-    display: none;
-    transform: translateY(-100%);
   }
   
   .site-header--stuck .header-item--navigation.is-active {
@@ -11741,6 +11734,7 @@ NAVIGATION
   line-height: 1.4;
   padding: 20px 0;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  top: 66px;
 }
 
 .megamenu .grid {
@@ -11753,9 +11747,9 @@ NAVIGATION
 /***** Level 1 *****/
  .site-navigation > .site-nav__item > .site-nav__link {
   color: var(--colorTextBody) !important;
-  font-weight: var(--typeHeaderWeight);
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 14px;
+  padding: 7.5px 10px;
 }
 
 .site-navigation > .site-nav__item:last-of-type > .site-nav__link {
@@ -11766,7 +11760,7 @@ NAVIGATION
   border-color: var(--colorPink) !important;
 }
 
-.site-nav--has-dropdown:after {
+/* .site-nav--has-dropdown:after {
   content: '';
   background-position:100%;
   background-image:url({{ "ico-select.svg" | asset_url | split: '?' | first }});
@@ -11775,15 +11769,13 @@ NAVIGATION
   background-size:10px;
   padding-right:21px;
   padding-bottom: 1px;
-}
+} */
 
 /***** Level 2 (Normal) *****/
 .site-nav__item .site-nav__dropdown-link:not(.site-nav__dropdown-link--top-level) {
   font-size: calc(var(--typeBaseSize) - 1px);
   padding: 5px 15px;
 }
-
-
 
 /***** Level 2 (Mega) *****/
 .header-item--navigation > .site-nav .site-nav__item .site-nav__dropdown.megamenu .h5 a {
@@ -11855,6 +11847,11 @@ NAVIGATION
 }
 
 /***** MOBILE NAVIGATION *****/
+@media only screen and (max-width:768px) {
+  .header-item--navigation {
+    display: none;
+  }
+}
 #NavDrawer {
   background-color: var(--colorLightBlue);
 }
@@ -12138,7 +12135,7 @@ HOMEPAGE
 .index-section--hero .hero__text-content {
   vertical-align: top;
   text-align: center;
-  top: 25px;
+  top: 45px;
 }
 
 @media only screen and (min-width:769px) {
