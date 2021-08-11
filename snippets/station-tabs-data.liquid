@@ -1,4 +1,6 @@
 {%- capture tabs %}
+  {%- capture content %}{{ collections['ocean-bottle'].description }}{% endcapture -%}
+  34090^^About Ocean Bottle^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Ocean Bottle^^^^^^0^^~~
   {%- capture content %}{{ collections['bambu'].description }}{% endcapture -%}
   56037^^About Bambu^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Bambu^^^^^^0^^~~
   {%- capture content %}{{ collections['ceae'].description }}{% endcapture -%}
@@ -55,8 +57,6 @@
   34820^^About The Swag^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||The Swag^^^^^^0^^~~
   {%- capture content %}{{ collections['neon-kactus'].description }}{% endcapture -%}
   34093^^About Neon Kactus^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Neon Kactus^^^^^^0^^~~
-  {%- capture content %}<p>{{ collections['ocean-bottle'].description }}</p>{% endcapture -%}
-  34090^^About Ocean Bottle^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Ocean Bottle^^^^^^0^^~~
   {%- capture content %}<p>{{ collections['zero-waste-club'].description }}</p>{% endcapture -%}
   34092^^About Zero Waste Club^^{{ content | replace: '~', '&#126;' | replace: '^', '&#94;' }}^^||||Zero Waste Club^^^^^^0^^~~
   {%- capture content %}<p>{{ collections['acala'].description }}</p>{% endcapture -%}
